@@ -30,7 +30,7 @@
             .home_section {width: 100vw; height: 100vh;}
             .home_section_wrap {width: 100vw; height: 100vh;}
             .logo {width: 60px; font-family: HugeGothic-Bold; font-size: 36px; color:deeppink; position: fixed; top: 60px; }
-            .home_section_h1 {}
+            .home_section_h1 {width: 100vw; height: 100vh;}
             
             
             .width_100vw {width: 100vw;}
@@ -59,18 +59,20 @@
 
 <body>
 
-    <div class="home_section">
-        <div class="home_section_wrap">
-            <div style="display: flex; justify-content: center;">H</div>
-            <h1 style="display: flex; justify-content: center;">Hello.</h1>
-            <p >Today at Huge.</p>
-            <div >|</div>
-        </div>
-
-       
+    <div style="width:74px; height:74px; background-color: white; position: fixed; left: calc(50vw - 37px); top: 50px; display: flex; justify-content: center; align-items: center; z-index: 200;">
+        <div style="width:48px; height:48px; color:#ea178c; font-family: HugeGothic-Bold; font-size: 36px; font-weight: 600; text-align: center; line-height: 54px;">H</div>
     </div>
 
+    <div style="width: 100vw; height: 100vh; background-color: white; display: flex ; justify-content: center; align-items: center; position: relative;">
+        <h1 style="height: 300px; width: 800px; font-family: HugeGothic-Bold; font-size: 300px; color:black; font-weight: 600; text-align: center;">
+            Hello.</h1>
+        <div style="width: 100vw; height: 90px; background-color: white; display: flex; justify-content: center; align-items: center; flex-direction: column; position: absolute; bottom:0; ">
+            <div style="font-family: Galaxie-book; font-size: 15px; color:black; font-weight: 100; position: absolute; bottom:60px;">Today at Huge.</div>
+            <div style="border-left: 1px solid black; width:30px; height:30px; position: absolute; left:50vw bottom:0;"></div>
+        </div>
 
+    </div>
+   
 
 
 
