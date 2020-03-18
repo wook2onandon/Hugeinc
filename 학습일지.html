@@ -145,8 +145,9 @@ css네이밍 규칙
 
 
 
-css는 중복일 경우 important>직접지정>하향우선>부모에게상속>브라우저기본
+css는 중복일 경우 !important(되도록 사용x)>인라인>직접지정(구체적 선언이 우선 ex. 자손선택이 우선 됨)>하향우선>부모에게상속>브라우저기본
 !important -->css에서 최고 우선순위
+클래스 지정했을시에 단계가 더 자세한 속성을 우선순위로 둠
 
 css상자모델
 모든html 요소는 상자로 간주 될 수 있습니다
@@ -203,3 +204,31 @@ justify-content --> flex-start는 왼쪽 flex-end는 오른쪽
 
 크롬웹스토어 -->fatkun-->페이지의 이미지다운가능
           -->full page screen capture--> 웹페이지 전체캡쳐가능
+        --> measure검색 -->dimensions 사이즈재기
+        -->ruler검색 --> page ruler redux 사이즈재기
+        -->colorzilla 컬러피커
+
+
+
+ 
+
+
+html 주석 = <!---->
+css 주석 = /* */
+css 링크거는법
+        --> link rel="stylesheet" type="text/css" href="css/home.css"
+css파일과 이미지가 같은 폴더가 아닐시에
+    --> ../
+
+
+CSS 선택자 자손의선택
+-->부모에게 클래스를 만들고 밑에거는 바로사용가능
+-->부모의 이름뒤에 한칸띄우거나 . 을붙인뒤 속성태그를 입력
+직계자손은 > 기호사용 뒤 속성태그
+똑같은 자손들이 여럿 있을 경우 첫번째는 :first-child, 중간은 :nth-child(숫자), 마지막은 :last-child를 사용하면 됨
+nth-child( )괄호안에 odd홀수적용 even짝수적용 3n은3의배수적용
+
+
+
+
+
