@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huge Inc.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, web, UI UX,">
+    <meta name="author" content="wook">
+    
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <style>
+
+    header {
+        width: 100vw; height: 440px; position: fixed; left: 0; top: 0; z-index: 100; background-color: #f4f4f4; visibility: hidden;
+    }
+    nav{
+        width: 100vw; height: 440px; display: flex; justify-content: center; align-items: center; box-sizing: border-box; position: relative;
+    }
+    #logo {
+        width: 74px; height: 74px; display: flex; justify-content: center; align-items: center; font-family: HugeGothic-Bold,Arial, Helvetica, sans-serif; font-size: 32px; color: #ea178c; background-color: white; position: fixed; top: 50px; left: calc(50vw - 37px); z-index: 200;
+    }
+    .menu_wrap {
+        width: 1050px; height: 90px; background-color: yellow; display: flex; justify-content: space-between;
+    }
+    .menu_wrap li {
+        width: 190px; height: 90px; display: flex; flex-direction: column; align-items: center;
+    }
+    
+    .menu_wrap li a {
+        font-family: HugeGothic-Bold; font-size: 36px; color: black; line-height: 36px;
+    }
+    .menu_wrap li a:hover {
+        color: #ea178c; cursor: pointer;
+    }
+    .menu_wrap li p {
+        font-family: Galaxie-book; font-size: 14px; line-height: 28px; letter-spacing: -1px;
+    }
+    .menu_wrap li div {
+        border-bottom: 1px solid black; width: 48px; height: 36px;
+    }
+    .gnb_aside {
+        position: absolute; width: 320px; height: 22px; top: 350px; left: calc(50vw - 160px); background-color: yellow; display: flex; justify-content: center;
+    }
+    .gnb_aside p {
+        font-family: Galaxie-book; font-size: 14px; line-height: 22px; letter-spacing: -1px;
+    }
+    .gnb_aside a {
+        font-family: HugeGothic-Bold; font-size: 16px; color: black; line-height: 21px; margin-left: 6px; padding-top: 1px;
+    }
+    .gnb_aside a:hover {
+        color: #ea178c; cursor: pointer; 
+    }
+    .gnb_aside a span {
+        color: #ea178c;
+    }
+    #home_01 {
+        width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;
+    }
+    #home_01 > h1 {
+        font-family: HugeGothic-Bold; font-weight: 100; font-size:300px; color: black;
+    }
+    #home_02 { 
+        background-image: url(img/huge.png); background-size: cover; color: white; font-size: 120px; width: 100vw; height: 100vh;
+    }
+    #home_02 > h1 {
+        color: white; font-size: 120px;
+    }
+ 
+
+
+    </style>
+
+    <script>
+
+    var header_state = 0; 
+    
+    
+        function logoClick() {
+            if (header_state == 0 ) {
+                document.getElementById("home_header").style ="visibility:visible;"; header_state = 1;
+            } 
+            else {
+                document.getElementById("home_header").style ="visibility:hidden;"; header_state = 0;
+            }
+        }
+
+        
+    </script>
+
+
+</head>
+<body>
+
+    <div id="logo" onclick="logoClick()">H</div>
+
+    <header id="home_header">
+        <nav class="gnb"> 
+            <ul class="menu_wrap">
+                <li>
+                    <a>Hello.</a>
+                    <p>Today at Huge.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a>Work.</a>
+                    <p>What we've made.</p>
+                    <div></div>
+                </li>  
+                <li>
+                    <a>About.</a>
+                    <p>Who we are.</p>
+                    <div></div>
+                </li>  
+                <li>
+                    <a>Careers.</a>
+                    <p>Join the team.</p>
+                    <div></div>
+                </li>  
+                <li>
+                    <a>Contact.</a>
+                    <p>Get in touch.</p>
+                    <div></div>
+                </li>  
+                
+            </ul>
+        
+        <div class="gnb_aside"> 
+            <p>Explore our thought leadership at</p> 
+            <a>MAGENTA<span>.</span></a> 
+        </div>
+        </nav>
+
+    </header>
+  
+   
+
+    <main>
+        <section id="home_01">
+            <h1>HELLO.</h1>
+        </section>
+        <section id="home_02">
+            <h1>#FreeThePeriod.</h1>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+</body>
+</html>
