@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title>Huge Inc.</title>
+    <meta charset="utf-8">
+
+    <!-- 뷰포트 세팅 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+    <!--사이드 메타 태그 -->
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, web, UI UX,">
+    <meta name="author" content="wook">
+    
+    <!-- 구글 웹폰트 링크 -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
+
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/work.css"> <!-- 홈 화면 css -->
+
+
+    <script>
+
+        /* 변수 선언 */
+
+        var header_state = 0; /* 헤더 상태 */
+        
+        
+            function logoClick() {
+                if (header_state == 0 ) {
+                    document.getElementById("home_header").style ="visibility:visible;"; header_state = 1; /* 헤더 visible 상태로 기억 */
+                } 
+                else {
+                    document.getElementById("home_header").style ="visibility:hidden;"; header_state = 0; /* 헤더 hidden 상태로 기억 */
+                }
+            }
+    
+            
+        </script>
+
+
+</head>
+
+
+
+<body>
+
+ <!-- home 로고 -->
+    <div id="logo" onclick="logoClick()">H</div>
+
+
+ <!-- 메뉴바 시작 -->
+<header id="home_header">
+    <nav class="gnb"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
+            <li>
+                <a href="index.html">Hello.</a>
+                <p>Today at Huge.</p>
+                <div></div>
+            </li>
+            <li>
+                <a href="#home_06">Work.</a>
+                <p>What we've made.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a>About.</a>
+                <p>Who we are.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a>Careers.</a>
+                <p>Join the team.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a>Contact.</a>
+                <p>Get in touch.</p>
+                <div></div>
+            </li>  
+            
+        </ul> <!-- 메뉴 ul 끝 -->
+    
+    <div class="gnb_aside"> 
+        <p>Explore our thought leadership at</p> 
+        <a>MAGENTA<span>.</span></a> 
+    </div>
+    </nav>
+
+</header>
+<!-- 메뉴바 끝 -->
+
+<section style="width: 100vw; height: 100vh; position: relative;">
+
+    <video autoplay muted loop style="min-width: 100vw; min-height: 100vh;">
+        <source src="video/huge_work.mp4" type="video/mp4">
+        당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
+    </video>
+    
+    <h2 style="width: 200px; height: 100px; background-color: rgba(234, 23, 140, 0.6); color: white; position: absolute; top: 45vh; left: 45vw;"> Hello </h2>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- footer시작 -->
+
+<footer class="home_footer bg_color_black">
+
+    <div>
+
+        <div class="footer_content_left color_white">
+            <div>HUGE</div>
+            <p>Make somerthing you live.</p>
+        </div>
+
+        <div class="footer_content_right">
+            <div>
+                <a href="hello.html">Hello</a>
+                <a href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+                CCPA Privacy Notice<br>
+                Modern Slavery Act Statement</div>
+        </div>
+
+    </div>
+
+
+
+</footer>
+
+
+
+
+<!-- footer끝 -->
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
     
     <title>Huge Inc.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-        <meta charset="utf-8">
-        <meta name="description" content="Huge Inc Website">
-        <meta name="keywords" content="Design, Agency, web, UI UX,">
-        <meta name="author" content="wook">
+    <meta charset="utf-8">
+
+    <!-- 뷰포트 세팅 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+    <!--사이드 메타 태그 -->
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, web, UI UX,">
+    <meta name="author" content="wook">
+    
+    <!-- 구글 웹폰트 링크 -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
+
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/home.css"> <!-- 홈 화면 css -->
+
+
+    <script>
+
+        /* 변수 선언 */
+
+        var header_state = 0; /* 헤더 상태 */
         
         
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
-        <link rel="stylesheet" type="text/css" href="css/destyle.css">
-        <link rel="stylesheet" type="text/css" href="css/home.css">
-
-
-        <script>
-
-
+            function logoClick() {
+                if (header_state == 0 ) {
+                    document.getElementById("home_header").style ="visibility:visible;"; header_state = 1; /* 헤더 visible 상태로 기억 */
+                } 
+                else {
+                    document.getElementById("home_header").style ="visibility:hidden;"; header_state = 0; /* 헤더 hidden 상태로 기억 */
+                }
+            }
+    
+            
         </script>
 
 
@@ -27,11 +47,54 @@
 
 
 <body>
-<section> <!--첫 페이지 시작-->
+
+ <!-- home 로고 -->
+    <div id="logo" onclick="logoClick()">H</div>
+
+
+ <!-- 메뉴바 시작 -->
+    <header id="home_header">
+        <nav class="gnb"> 
+            <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
+                <li>
+                    <a href="index.html">Hello.</a>
+                    <p>Today at Huge.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#home_06">Work.</a>
+                    <p>What we've made.</p>
+                    <div></div>
+                </li>  
+                <li>
+                    <a>About.</a>
+                    <p>Who we are.</p>
+                    <div></div>
+                </li>  
+                <li>
+                    <a>Careers.</a>
+                    <p>Join the team.</p>
+                    <div></div>
+                </li>  
+                <li>
+                    <a>Contact.</a>
+                    <p>Get in touch.</p>
+                    <div></div>
+                </li>  
+                
+            </ul> <!-- 메뉴 ul 끝 -->
+        
+        <div class="gnb_aside"> 
+            <p>Explore our thought leadership at</p> 
+            <a>MAGENTA<span>.</span></a> 
+        </div>
+        </nav>
+
+    </header>
+<!-- 메뉴바 끝 -->
+
+<section id="home_hello"> <!--첫 페이지 시작-->
     
-    <div class="logo_side">
-            <div class="logo_inside">H</div>
-    </div>
 
      
     <div class="main_section">
@@ -87,7 +150,7 @@
 
 
 
-<section> <!--Home 세번째 섹션 시작-->
+<section id="home_02"> <!--Home 세번째 섹션 시작-->
 
 
     <div class="home_section_wrap back_img_02"> <!--Home 세번째 섹션 wrap 시작-->
@@ -125,7 +188,7 @@
 
 
 
-<section> <!--Home 네번째 섹션 시작-->
+<section id="home_03"> <!--Home 네번째 섹션 시작-->
 
 
     <div class="home_section_wrap back_img_03"> <!--Home 네번째 섹션 wrap 시작-->
@@ -163,7 +226,7 @@
 
 
 
-<section> <!--Home 다섯번째 섹션 시작-->
+<section id="home_04"> <!--Home 다섯번째 섹션 시작-->
 
 
     <div class="home_section_wrap back_img_04"> <!--Home 다섯번째 섹션 wrap 시작-->
@@ -203,7 +266,7 @@
 
 
 
-<section> <!--Home 여섯번째 섹션 시작-->
+<section id="home_05"> <!--Home 여섯번째 섹션 시작-->
 
 
     <div class="home_section_wrap back_img_05"> <!--Home 여섯번째 섹션 wrap 시작-->
@@ -240,7 +303,7 @@
 
 
 
-<section> <!--Home 일곱번째 섹션 시작-->
+<section id="home_06"> <!--Home 일곱번째 섹션 시작-->
 
 
     <div class="home_section_wrap back_img_06"> <!--Home 일곱번째 섹션 wrap 시작-->
@@ -278,7 +341,7 @@
 
 
 
-<section> <!--Home 여덟번째 섹션 시작-->
+<section id="home_07"> <!--Home 여덟번째 섹션 시작-->
 
 
     <div class="home_section_wrap back_img_07"> <!--Home 여덟번째 섹션 wrap 시작-->
@@ -316,7 +379,7 @@
 
 <!-- footer시작 -->
 
-<div class="home_footer bg_color_black">
+<footer class="home_footer bg_color_black">
 
     <div>
 
@@ -326,7 +389,13 @@
         </div>
 
         <div class="footer_content_right">
-            <div><a href="hello.html">Hello</a> <a href="work.html">Work</a> <a href="about.html">About</a> <a href="careers.html">Careers</a> <a href="contact.html">Contact</a></div>
+            <div>
+                <a href="hello.html">Hello</a>
+                <a href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
             <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
                 CCPA Privacy Notice<br>
@@ -337,14 +406,7 @@
 
 
 
-</div>
-
-
-
-
-
-
-
+</footer>
 
 
 
@@ -354,9 +416,6 @@
 
 
 </body>
-
-
-
 
 
 
