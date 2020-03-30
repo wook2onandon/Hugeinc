@@ -227,8 +227,46 @@ CSS 선택자 자손의선택
 직계자손은 > 기호사용 뒤 속성태그
 똑같은 자손들이 여럿 있을 경우 첫번째는 :first-child, 중간은 :nth-child(숫자), 마지막은 :last-child를 사용하면 됨
 nth-child( )괄호안에 odd홀수적용 even짝수적용 3n은3의배수적용
+nth-last-child( ) 뒤에서 몇번째인지 찾는 것 괄호안에 숫자입력
 
 
+a:link {color:black;} 링크 기본 상태
+a:visited {color:blue;} 방문한 링크
+a:hover {color:black;} 마우스 오버할 때
+a:active {color:red;} 클릭하는 순간
+hover -->cursor: pointer; --> 마우스 올리면 손모양으로 바뀜 
 
 
+항상 보이는 메뉴바
+-->gnb (global navigation bar)
+일정 상황에서 보이는 메뉴바
+-->lnb (local navigation bar)  snb (sub navigation bar)
+
+가능한 태그의 이름을 다양하게 한다 -->시멘틱 마크업
+--> header main footer 로사용 요소 선택자도 가능해짐 클래스를 따로 줄 필요 없음
+(div에 class네임 줘서 할 필요없음)
+
+header->nav 로 네비바 만들기
+
+target속성
+target="___"
+_blank 새창이나 새탭
+_self 클릭한것과 동일한 창 탭에서 링크된 문서를 연다
+_parent 부모 프레임에서 링크된 문서를 연다
+_top 링크된 문서를 창전체에서 연다
+_framename 링크 된 문서를 지정된 프레임으로 연다
+
+max-width, min-width --> 최대치와 최소치 만큼만 늘어나고 줄어듦
+
+HTML5 표준 지원 형식
+video- mp4, webm, ogg
+audio- mp3, wav ogg
+
+caniuse.com -->사용가능한 확장자 검색
+
+video autoplay시에 muted를 사용해야만 자동재생이가능
+loop사용시 반복재생
+
+? -->매개변수
+?autoplay=1&control=1 이런식으로 사용
 
