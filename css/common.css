@@ -1,0 +1,284 @@
+/* 웹 폰트 링크 */
+
+@font-face  /* 갤럭시 북 폰트 */
+{font-family: Galaxie-book; 
+src:url(../font/GalaxieCopernicus-Book.woff)}
+
+@font-face  /* 휴즈 고딕 볼드 폰트 */
+{font-family: HugeGothic-Bold; 
+src:url(../font/HugeGothic-Bold.woff)}
+
+
+
+/* 텍스트 */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: HugeGothic-Bold; font-weight: 400; -webkit-font-smoothing:antialiased;
+}
+
+p {
+    font-family: Galaxie-book; font-weight: 400; -webkit-font-smoothing:antialiased;     
+}
+
+h1 {
+    font-size: 170px; line-height: 170px;
+}
+
+h2 {
+    font-size: 80px; line-height: 84px; letter-spacing: -2px;
+}
+
+h3 {
+    font-size: 56px; line-height: 70px; letter-spacing: -4px;
+}
+
+p {
+    font-size: 18px; line-height: 34px; letter-spacing: -0.27504px;
+}
+
+
+.h3_serif {
+    font-family: Galaxie-book; font-size: 56px; line-height: 70px; letter-spacing: -4px;
+}
+
+.h4_sans {
+    font-size: 44px; line-height: 44px;
+}
+
+.h5_sans {
+    font-size: 24px; line-height: 30px;
+}
+
+.h6_sans {
+    font-size: 22px; line-height: 26px;
+}
+
+.p_small_1 {
+    font-size: 16px; letter-spacing: -1px;
+}
+
+.p_small_2 {
+    font-size: 12px; line-height: 22.6667px; letter-spacing: -0.27504px; 
+}
+
+.p_small_sans {
+    font-size: 14px; line-height: 20px;
+}
+
+
+
+/*  텍스트 종류
+
+    Family   size   line-height  letter-spacing
+ 
+1. HugeGothic-Bold, 170px, 170px, normal  >  h1
+
+
+2. HugeGothic-Bold, 80px, 84px, -2px  >  h2
+3. HugeGothic-Bold, 56px, 70px, -4px  >  h3
+
+
+3. Galaxie-book, 56px, 70px, -4px  >  .h3_serif
+
+
+4. HugeGothic-Bold, 44px, 44px, normal  >  .h4_sans
+5. HugeGothic-Bold, 24px, 30px, normal  >  .h5_sans
+6. HugeGothic-Bold, 22px, 26px (16px), normal  >  .h6_sans
+
+
+7. Galaxie-book, 18px, 34px, -0.27504px  >  p
+8. Galaxie-book, 16px, normal, -1px  >  .p_small_1
+
+
+9. HugeGothic-Bold, 14px, 20px, normal  >  .p_small_sans
+10. Galaxie-book, 12px, 22.6667px, -0.27504px  >  .p_small_2
+
+
+*/
+
+
+
+
+
+/* 텍스트 분석
+
+
+.h2_home {
+    font-family: HugeGothic-Bold; font-size: 80px; font-weight: 400; line-height: 84px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+
+.p_home .p_work {
+    font-family: Galaxie-book; font-size: 18px; font-weight: 400; letter-spacing: -0.27504px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
+}
+
+.p_caption {
+    font-family: Galaxie-book; font-size: 18px;  font-weight: 400; letter-spacing: -0.27504px; line-height: 22.6667px;     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.h5_home{
+    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 400; line-height: 16px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+
+.h2_work_icon{
+    font-family: HugeGothic-Bold; font-size: 44px; font-weight: 400; line-height: 44px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+
+.div_work {
+    font-family: Galaxie-book; font-size: 30px;  font-weight: 400; letter-spacing: -4px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
+}
+
+.div_work_section_title {
+    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 400; line-height: 16px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+
+.h3_work {
+    font-family: HugeGothic-Bold; font-size: 80px; font-weight: 400; line-height: 84px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+
+.h1_about {
+    font-family: Galaxie-book; font-size: 170px;  font-weight: 400; line-height: 170px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
+}
+
+.h2_about {
+    font-family: Galaxie-book; font-size: 30px;  font-weight: 400; letter-spacing: -4px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
+}
+
+.h2_about_middle {
+    font-family: Galaxie-book; font-size: 44px;  font-weight: 400;  line-height: 46px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
+}
+
+.h3_about {
+    font-family: HugeGothic-Bold; font-size: 24px; font-weight: 400; line-height: 30px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+
+.p_about {
+    font-family: Galaxie-book; font-size: 18px;  font-weight: 400; letter-spacing: -0.27504px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
+}
+
+
+
+
+.h6_footer_menu {
+    font-family: HugeGothic-Bold; font-size: 14px; line-height: 20px; font-weight: 400; -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; letter-spacing: -0.27504px;
+}
+
+*/
+
+
+
+
+/* background-color */
+
+.bg_color_black {
+    background-color: black;
+}
+
+
+
+/* font color */
+
+.color_white {
+    color: white;
+}
+.color_black {
+    color: black;
+}
+
+
+
+
+/* 메뉴 바 */
+
+header {
+    width: 100vw; height: 440px; position: fixed; left: 0; top: 0; z-index: 100; background-color: #f4f4f4; visibility: hidden;
+}
+nav{
+    width: 100vw; height: 440px; display: flex; justify-content: center; align-items: center; box-sizing: border-box; position: relative;
+}
+#logo {
+    width: 74px; height: 74px; display: flex; justify-content: center; align-items: center; font-family: HugeGothic-Bold, Arial, Helvetica, sans-serif; font-size: 32px; color: #ea178c; background-color: white; position: fixed; top: 50px; left: calc(50vw - 37px); z-index: 200;
+}
+.menu_wrap {
+    width: 1050px; height: 90px;  display: flex; justify-content: space-between;
+}
+.menu_wrap li {
+    width: 190px; height: 90px; display: flex; flex-direction: column; align-items: center;
+}
+
+.menu_wrap li a {
+    font-family: HugeGothic-Bold; font-size: 36px; color: black; line-height: 36px;
+}
+.menu_wrap li a:hover {
+    color: #ea178c; cursor: pointer;
+}
+.menu_wrap li p {
+    font-family: Galaxie-book; font-size: 14px; line-height: 28px; letter-spacing: -1px;
+}
+.menu_wrap li div {
+    border-bottom: 1px solid black; width: 48px; height: 36px;
+}
+.gnb_aside {
+    position: absolute; width: 320px; height: 22px; top: 350px; left: calc(50vw - 160px);  display: flex; justify-content: center;
+}
+.gnb_aside p {
+    font-family: Galaxie-book; font-size: 14px; line-height: 22px; letter-spacing: -1px;
+}
+.gnb_aside a {
+    font-family: HugeGothic-Bold; font-size: 16px; color: black; line-height: 21px; margin-left: 6px; padding-top: 1px;
+}
+.gnb_aside a:hover {
+    color: #ea178c; cursor: pointer; 
+}
+.gnb_aside a span {
+    color: #ea178c;
+}
+
+
+
+
+/* footer */
+
+.home_footer {
+    width:100vw; height: 240px; padding: 70px 0 80px; box-sizing: border-box;
+}
+    .home_footer > div {width: 100vw; height: 90px; padding: 0 calc(12.5vw + 15px);display: flex; justify-content: space-between; min-width: 1400px;
+    }
+
+.footer_content_left {
+    display: flex; align-items: center;
+}
+    .footer_content_left > div {
+        font-family: HugeGothic-Bold; font-size: 36px; line-height: 36px; border-right: 1px solid #878787; padding-right: 32px; margin-right: 32px; letter-spacing: 2px;
+    }
+    .footer_content_left > p {
+        font-family: HugeGothic-Bold; font-size: 18px; line-height: 36px; color: white; letter-spacing: 1px;
+    }
+
+
+.footer_content_right {
+    display: flex; flex-direction: column;
+}
+    .footer_content_right > div {
+        font-family: HugeGothic-Bold; font-size: 14px; line-height: 24px; letter-spacing: 1px; color: #c8c8c8; margin-bottom: 10px;
+    }
+    .footer_content_right a {
+        margin-right: 16px;
+    }
+        .footer_content_right a:last-child {
+            margin-right: 0;
+        }
+.footer_aside {
+    font-family: Galaxie-book; font-size: 12px; line-height: 20px; letter-spacing: 1px; color: #c8c8c8; text-align: right;
+}
