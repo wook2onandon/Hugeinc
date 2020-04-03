@@ -193,7 +193,7 @@
 }
 
 .our_office_list {
-    display: flex; flex-wrap: wrap; width: 100%;
+    display: flex; flex-wrap: wrap; width: 100%; margin-top: 10px;
 }
 
 .our_office_list li {
