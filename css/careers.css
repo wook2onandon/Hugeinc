@@ -1,0 +1,103 @@
+/*  careers_action  */
+
+.careers_action {
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.careers_action_container {
+  padding: 150px 12.71186%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.careers_action_title {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.careers_action_text {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.careers_action_button {
+  background-color: black;
+  color: white;
+  padding: 30px 45px;
+}
+
+.careers_action_button:hover {
+  cursor: pointer;
+}
+
+/*  careers_why  */
+
+.careers_why {
+  width: 100vw;
+  background-color: white;
+  padding: 140px 0;
+  box-sizing: border-box;
+}
+
+.careers_why_container {
+  display: flex;
+  width: 74.68354%;
+  padding: 140px 0;
+  margin: 0 auto;
+}
+
+.careers_why_content {
+  margin-left: 1.69492%;
+  width: 66.10169%;
+  box-sizing: border-box;
+}
+
+.careers_why_title {
+  margin-bottom: 70px;
+}
+
+.careers_why_text_1 {
+  padding: 25px 0;
+}
+
+.careers_why_text_2 {
+  padding: 25px 0;
+}
+
+/*  careers_ways  */
+
+.careers_ways {
+  width: 100vw;
+  background-color: black;
+}
+
+.careers_ways_container {
+  width: 74.68354%;
+  padding: 200px 0;
+  margin: 0 auto;
+  display: flex;
+}
+
+.careers_ways_list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.69492%;
+  width: 66.10169%;
+}
+
+.careers_ways_list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.careers_ways_list div {
+  width: 87.17949%;
+}
+
+.careers_ways_list h2 {
+  margin-bottom: 10px;
+}
