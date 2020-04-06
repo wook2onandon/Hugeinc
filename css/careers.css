@@ -1,3 +1,14 @@
+/*  careers_video  */
+
+.hero_video {
+  position: relative; width: 100vw; height: 80vh;
+}
+
+.hero_video video {
+  min-width: 100vw; min-height: 80vh; border: none; right: 0; bottom: 0; position: absolute;
+}
+
+
 /*  careers_action  */
 
 .careers_action {
@@ -8,7 +19,7 @@
 
 .careers_action_container {
   padding: 150px 12.71186%;
-  width: 100%;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -24,12 +35,13 @@
 
 .careers_action_button {
   background-color: black;
-  color: white;
   padding: 30px 45px;
+  display: inline-block;
 }
 
 .careers_action_button:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 /*  careers_why  */
@@ -59,7 +71,7 @@
 }
 
 .careers_why_text_1 {
-  padding: 25px 0;
+  padding: 0 0 25px ;
 }
 
 .careers_why_text_2 {

@@ -9,11 +9,16 @@
   min-height: 80vh;
 }
 
+.contact_home_title {
+  width: 74.68354%; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: 0 auto;
+}
+
 /* contact_hello */
 
 .contact_hello {
   background-color: black;
   width: 100vw;
+  box-sizing: border-box;
 }
 
 .contact_hello_container {
@@ -74,6 +79,7 @@
   padding: 115px 70px 30px;
   width: 33.33333%;
   border-right: solid 1px #000;
+  border-top: solid 1px #000;
   background-color: white;
 }
 
@@ -91,4 +97,9 @@
 
 .contact_us_content:nth-child(3n) {
   border-right: none;
+}
+
+.contact_us_content:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
