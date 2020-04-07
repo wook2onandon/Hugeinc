@@ -9,11 +9,30 @@
 }
 
 .work_03_ul {
-    width: 90vw; margin: 0 auto; display: flex; flex-wrap: wrap;
+    width: 89.7vw; margin: 0 auto; display: flex; flex-wrap: wrap;
 }
 
-.work_03_ul li {
-    width: 30vw; height: 30vw; background-size: cover; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 0 20px 48px; font-size: 48px; font-family: HugeGothic-Bold; color: white;    
+.work_03_li {
+    width: 29.9vw; height: 29.9vw; background-size: cover;     
+}
+
+.work_03_ul a {
+    width: 29.9vw;
+    height: 29.9vw;
+    display: block;
+    padding-top: calc(29.9vw - 64px);
+    padding-left: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.work_03_li h5 {
+    margin-top: 20px;
+}
+
+.work_03_li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: calc(29.9vw - 124px);
 }
 
 .work_03_ul li:nth-child(1) {

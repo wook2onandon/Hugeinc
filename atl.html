@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    
+    <title>Huge Inc.</title>
+    <meta charset="utf-8">
+
+    <!-- 뷰포트 세팅 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+    <!--사이드 메타 태그 -->
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, web, UI UX,">
+    <meta name="author" content="wook">
+    
+    <!-- 구글 웹폰트 링크 -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
+
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/atl.css"> 
+    
+    <!-- 홈 화면 css -->
+
+
+    <script>
+
+        /* 변수 선언 */
+
+        var header_state = 0; /* 헤더 상태 */
+        
+        
+            function logoClick() {
+                if (header_state == 0 ) {
+                    document.getElementById("home_header").style ="visibility:visible;"; header_state = 1; /* 헤더 visible 상태로 기억 */
+                } 
+                else {
+                    document.getElementById("home_header").style ="visibility:hidden;"; header_state = 0; /* 헤더 hidden 상태로 기억 */
+                }
+            }
+    
+            
+    </script>
+
+
+</head>
+
+
+
+<body>
+
+ <!-- home 로고 -->
+    <div id="logo" onclick="logoClick()">H</div>
+
+
+ <!-- 메뉴바 시작 -->
+<header id="home_header">
+    <nav class="gnb"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
+            <li>
+                <a href="index.html">Hello.</a>
+                <p class="color_black">Today at Huge.</p>
+                <div></div>
+            </li>
+            <li>
+                <a href="work.html">Work.</a>
+                <p class="color_black">What we've made.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="about.html">About.</a>
+                <p class="color_black">Who we are.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="careers.html">Careers.</a>
+                <p class="color_black">Join the team.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="contact.html">Contact.</a>
+                <p class="color_black">Get in touch.</p>
+                <div></div>
+            </li>  
+            
+        </ul> <!-- 메뉴 ul 끝 -->
+    
+    <div class="gnb_aside"> 
+        <p class="color_black">Explore our thought leadership at</p> 
+        <a>MAGENTA<span>.</span></a> 
+    </div>
+    </nav>
+
+</header>
+<!-- 메뉴바 끝 -->
+
+<main>
+    <section class="atl_home">
+        <div class="atl_home_container color_white">
+            <div class="atl_home_header">
+                <a class="color_white">Office</a>
+                <span></span>
+                ATL.
+            </div>
+            
+            <div class="atl_home_content color_white">
+                <h1 class="color_white">ATL.</h1>
+                <div class="atl_home_text">
+                    <p class="color_white">1375 Peachtree St NE, Suite  400, Atlanta, GA 30309, USA</p>
+                    <a class="color_white"><p>+1 404 461 9025</p></a>
+                    <a class="color_white"><p>atl@hugeinc.com</p></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="office">
+        <div class="office_container">
+            <div class="office_title">
+                <hr>
+                <h6>The office.</h6>
+            </div>
+            <div class="office_text">
+                <p>Huge’s office in Atlanta has been pioneering new approaches to design and collaboration since it was founded in 2013. Today the office is one of the largest in Huge’s global network and the dominant experience agency in the southeastern US. <a>Dan Hou</a>   oversees the office.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="office_list">
+        <ul class="office_list_container">
+            <div class="office_list_row_wrap">
+                <li class="office_list_01">
+                    <div>
+                        <img src="img/atl/office_01.jpg">
+                    </div>
+                </li>
+            <div class="office_list_column_wrap">   
+                <li class="office_list_02">
+                    <div class="office_list_02_dog">
+                        <img src="img/atl/dog.jpg">
+                    </div>
+                <div class="office_list_02_wrap">
+                    <div class="office_list_02_skateboard">
+                        <img src="img/atl/skateboard.jpg">
+                    </div>
+                    <div class="office_list_02_table">
+                        <img src="img/atl/table.jpg">
+                    </div>
+                </div>
+                </li>
+            </div>
+            </div>
+
+
+
+
+        </ul>
+    
+    </section>
+
+</main>
+
+
+
+
+<!-- footer시작 -->
+
+<footer class="home_footer bg_color_black">
+
+    <div>
+
+        <div class="footer_content_left color_white">
+            <div>HUGE</div>
+            <p>Make somerthing you love.</p>
+        </div>
+
+        <div class="footer_content_right">
+            <div>
+                <a href="hello.html">Hello</a>
+                <a href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+                CCPA Privacy Notice<br>
+                Modern Slavery Act Statement</div>
+        </div>
+
+    </div>
+
+
+    
+
+
+</footer>
+
+
+<!-- footer끝 -->
+
+
+
+</body>
+
+
+
+
+</html>
