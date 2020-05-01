@@ -108,110 +108,37 @@ p {
   line-height: 20px;
 }
 
-/*  텍스트 종류
-
-    Family   size   line-height  letter-spacing
- 
-1. HugeGothic-Bold, 170px, 170px, normal  >  h1
 
 
-2. HugeGothic-Bold, 80px, 84px, -2px  >  h2
-3. HugeGothic-Bold, 56px, 70px, -4px  >  h3
+/*  keyframes  */
 
 
-3. Galaxie-book, 56px, 70px, -4px  >  .h3_serif
+@keyframes logo_animation {
+  0%{background-position:0% 4%}
+  50%{background-position:100% 97%}
+  100%{background-position:0% 4%}
 
-
-4. HugeGothic-Bold, 44px, 44px, normal  >  .h4_sans
-5. HugeGothic-Bold, 24px, 30px, normal  >  .h5_sans
-6. HugeGothic-Bold, 22px, 26px (16px), normal  >  .h6_sans
-
-
-7. Galaxie-book, 18px, 34px, -0.27504px  >  p
-8. Galaxie-book, 16px, normal, -1px  >  .p_small_1
-
-
-9. HugeGothic-Bold, 14px, 20px, normal  >  .p_small_sans
-10. Galaxie-book, 12px, 22.6667px, -0.27504px  >  .p_small_2
-
-
-*/
-
-/* 텍스트 분석
-
-
-.h2_home {
-    font-family: HugeGothic-Bold; font-size: 80px; font-weight: 400; line-height: 84px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
 }
 
-.p_home .p_work {
-    font-family: Galaxie-book; font-size: 18px; font-weight: 400; letter-spacing: -0.27504px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
+@keyframes header_animation_open {
+  from { 
+    height: 0px;
+  }
+
+  to { 
+    height: 440px;
+  }
 }
 
-.p_caption {
-    font-family: Galaxie-book; font-size: 18px;  font-weight: 400; letter-spacing: -0.27504px; line-height: 22.6667px;     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+@keyframes header_animation_close {
+  from { 
+    height: 440px;
+  }
+  to { 
+    height: 0px;
+  }
 }
 
-.h5_home{
-    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 400; line-height: 16px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
-}
-
-
-
-
-
-
-.h2_work_icon{
-    font-family: HugeGothic-Bold; font-size: 44px; font-weight: 400; line-height: 44px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
-}
-
-.div_work {
-    font-family: Galaxie-book; font-size: 30px;  font-weight: 400; letter-spacing: -4px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
-}
-
-.div_work_section_title {
-    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 400; line-height: 16px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
-}
-
-.h3_work {
-    font-family: HugeGothic-Bold; font-size: 80px; font-weight: 400; line-height: 84px; letter-spacing: -2px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
-}
-
-
-
-
-
-
-.h1_about {
-    font-family: Galaxie-book; font-size: 170px;  font-weight: 400; line-height: 170px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
-}
-
-.h2_about {
-    font-family: Galaxie-book; font-size: 30px;  font-weight: 400; letter-spacing: -4px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
-}
-
-.h2_about_middle {
-    font-family: Galaxie-book; font-size: 44px;  font-weight: 400;  line-height: 46px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
-}
-
-.h3_about {
-    font-family: HugeGothic-Bold; font-size: 24px; font-weight: 400; line-height: 30px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
-}
-
-.p_about {
-    font-family: Galaxie-book; font-size: 18px;  font-weight: 400; letter-spacing: -0.27504px; line-height: 34px; -webkit-font-smoothing:antialiased; text-rendering: optimizeLegibility;
-}
-
-
-
-
-.h6_footer_menu {
-    font-family: HugeGothic-Bold; font-size: 14px; line-height: 20px; font-weight: 400; -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility; letter-spacing: -0.27504px;
-}
-
-*/
 
 /* background-color */
 
@@ -229,22 +156,23 @@ p {
 }
 
 /* 메뉴 바 */
+main {
+  width: 100%;
+  transition: padding-top 0.5s;
+}
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 0px;
   position: fixed;
   display: block;
-  left: 0;
-  top: 0;
   z-index: 100;
   background-color: #f4f4f4;
   overflow: hidden;
-  transition: height 0.5s;
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   height: 440px;
   display: flex;
   justify-content: center;
@@ -265,15 +193,25 @@ nav {
   background-color: white;
   position: fixed;
   top: 50px;
-  left: calc(50vw - 37px);
+  left: calc(50% - 37px);
   z-index: 200;
+  padding-top: 4px;
+  box-sizing: border-box;
+  background: linear-gradient(315deg,  #ea178c, #ffffff, #ffffff, #ea178c,  #ffffff, #ffffff);
+  background-size: 800% 800%;
+  animation: logo_animation 0.7s;
+  animation-iteration-count: 1;
 }
+
+
+
 .menu_wrap {
   width: 1050px;
   height: 90px;
   display: flex;
   justify-content: space-between;
 }
+
 .menu_wrap li {
   width: 190px;
   height: 90px;
@@ -288,21 +226,25 @@ nav {
   color: black;
   line-height: 36px;
 }
+
 .menu_wrap li a:hover {
   color: #ea178c;
   cursor: pointer;
 }
+
 .menu_wrap li p {
   font-family: Galaxie-book;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -1px;
 }
+
 .menu_wrap li div {
   border-bottom: 1px solid black;
   width: 48px;
   height: 36px;
 }
+
 .gnb_aside {
   position: absolute;
   width: 320px;
@@ -312,12 +254,14 @@ nav {
   display: flex;
   justify-content: center;
 }
+
 .gnb_aside p {
   font-family: Galaxie-book;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -1px;
 }
+
 .gnb_aside a {
   font-family: HugeGothic-Bold;
   font-size: 16px;
@@ -326,10 +270,12 @@ nav {
   margin-left: 6px;
   padding-top: 1px;
 }
+
 .gnb_aside a:hover {
   color: #ea178c;
   cursor: pointer;
 }
+
 .gnb_aside a span {
   color: #ea178c;
 }
@@ -337,24 +283,25 @@ nav {
 /* footer */
 
 .home_footer {
-  width: 100vw;
+  width: 100%;
   height: 240px;
   padding: 70px 0 80px;
   box-sizing: border-box;
 }
-.home_footer > div {
-  width: 100vw;
+
+.home_footer_wrap{
+  width: 100%;
   height: 90px;
-  padding: 0 calc(12.5vw + 15px);
+  padding: 0 calc(12.5% + 15px);
   display: flex;
   justify-content: space-between;
-  min-width: 1400px;
 }
 
 .footer_content_left {
   display: flex;
   align-items: center;
 }
+
 .footer_content_left > div {
   font-family: HugeGothic-Bold;
   font-size: 36px;
@@ -364,6 +311,7 @@ nav {
   margin-right: 32px;
   letter-spacing: 2px;
 }
+
 .footer_content_left > p {
   font-family: HugeGothic-Bold;
   font-size: 18px;
@@ -384,12 +332,15 @@ nav {
   color: #c8c8c8;
   margin-bottom: 10px;
 }
+
 .footer_content_right a {
   margin-right: 16px;
 }
+
 .footer_content_right a:last-child {
   margin-right: 0;
 }
+
 .footer_aside {
   font-family: Galaxie-book;
   font-size: 12px;

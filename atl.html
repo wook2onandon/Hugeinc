@@ -32,74 +32,80 @@
         /* 변수 선언 */
 
         var header_state = 0; /* 헤더 상태 */
+        
+        
+            function logoClick() {
+                if (header_state == 0 ) {
+                    document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.5s; animation-fill-mode:forwards;"; 
+                    header_state = 1; /* 헤더 visible 상태로 기억 */
 
+                    document.getElementById('main').style = "padding-top: 440px;";
+                } 
 
-        function logoClick() {
-            if (header_state == 0) {
-                document.getElementById("home_header").style = "visibility:visible;"; header_state = 1; /* 헤더 visible 상태로 기억 */
+                else {
+                    document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.5s;"; 
+
+                    document.getElementById('main').style = "padding-top: 0px;";
+                    header_state = 0; /* 헤더 hidden 상태로 기억 */
+                }
             }
-            else {
-                document.getElementById("home_header").style = "visibility:hidden;"; header_state = 0; /* 헤더 hidden 상태로 기억 */
-            }
-        }
+    
+            
+        </script>
 
-
-    </script>
-
-
+        
 </head>
 
 
 
 <body>
 
-    <!-- home 로고 -->
+ <!-- home 로고 -->
     <div id="logo" onclick="logoClick()">H</div>
 
 
-    <!-- 메뉴바 시작 -->
-    <header id="home_header">
-        <nav class="gnb">
-            <ul class="menu_wrap">
-                <!-- 메뉴 ul 시작 -->
-                <li>
-                    <a href="index.html">Hello.</a>
-                    <p class="color_black">Today at Huge.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="work.html">Work.</a>
-                    <p class="color_black">What we've made.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="about.html">About.</a>
-                    <p class="color_black">Who we are.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="careers.html">Careers.</a>
-                    <p class="color_black">Join the team.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="contact.html">Contact.</a>
-                    <p class="color_black">Get in touch.</p>
-                    <div></div>
-                </li>
+ <!-- 메뉴바 시작 -->
+<header id="home_header">
+    <nav class="gnb"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
+            <li>
+                <a href="index.html">Hello.</a>
+                <p class="color_black">Today at Huge.</p>
+                <div></div>
+            </li>
+            <li>
+                <a href="work.html">Work.</a>
+                <p class="color_black">What we've made.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="about.html">About.</a>
+                <p class="color_black">Who we are.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="careers.html">Careers.</a>
+                <p class="color_black">Join the team.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="contact.html">Contact.</a>
+                <p class="color_black">Get in touch.</p>
+                <div></div>
+            </li>  
+            
+        </ul> <!-- 메뉴 ul 끝 -->
+    
+    <div class="gnb_aside"> 
+        <p class="color_black">Explore our thought leadership at</p> 
+        <a>MAGENTA<span>.</span></a> 
+    </div>
+    </nav>
 
-            </ul> <!-- 메뉴 ul 끝 -->
-
-            <div class="gnb_aside">
-                <p class="color_black">Explore our thought leadership at</p>
-                <a>MAGENTA<span>.</span></a>
-            </div>
-        </nav>
-
-    </header>
+</header>
     <!-- 메뉴바 끝 -->
 
-    <main>
+    <main id="main">
         <section class="atl_home">
             <div class="atl_home_opacity"></div>
             <div class="atl_home_container color_white">

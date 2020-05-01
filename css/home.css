@@ -2,19 +2,55 @@
 /* 메인 섹션 */
 
 .main_section {
-    width: 100vw; height: 100vh; background-color: white; display: flex ; justify-content: center; align-items: center; position: relative;
+    width: 100%; 
+    height: 100vh; 
+    background-color: white; 
+    display: flex ; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;    
 }
+
 .main_hello {
-    height: 300px; width: 800px; font-family: HugeGothic-Bold; font-size: 300px; color:black; font-weight: 600; text-align: center;
+    height: 300px; 
+    width: 800px; 
+    font-family: HugeGothic-Bold; 
+    font-size: 280px;
+    line-height: 280px; 
+    color:black; 
+    font-weight: 600; 
+    text-align: center; 
+    position: absolute; 
+    top: calc(50vh - 150px); 
+    left: calc(50% - 380px);
 }
+
+.main_hi {
+    height: 300px; 
+    width: 800px; 
+    font-family: HugeGothic-Bold; 
+    font-size: 200px;
+    line-height: 280px; 
+    color:black; 
+    font-weight: 600; 
+    text-align: center; 
+    position: absolute; 
+    top: calc(50vh - 150px);
+    left: calc(50% - 380px);
+    display: none;
+}
+
 .main_bottom_bar {
-    width: 100vw; height: 90px; background-color: white; display: flex; justify-content: center; align-items: center; flex-direction: column; position: absolute; bottom:0;
+    width: 100%; height: 90px; background-color: white; display: flex; justify-content: center; align-items: center; flex-direction: column; position: absolute; bottom:0;
 }
+
 .main_bottom_bar_content {
-    font-family: Galaxie-book; font-size: 15px; color:black; font-weight: 100; position: absolute; bottom:50px; height:40px;
+    font-family: Galaxie-book; font-size: 15px; color:black; font-weight: 100; padding-bottom:80px; text-align: center;
 }
+
 .main_bottom_bar_line {
     border-left: 1px solid black; width:20px; height:50px; position: absolute; bottom:0;
+    left: 50%;
 }
 
 
@@ -24,20 +60,44 @@
 /* home 섹션 */
 
 .home_section_wrap {
-    width: 100vw; height: 100vh; display: flex; background-size: cover; box-sizing: border-box;
+    width: 100%; height: 100vh; display: flex; background-size: cover; box-sizing: border-box;
 }
+
 .home_section_index {
-    width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;
+    width: 12.5%; height: 100vh; padding-top: 20vh; box-sizing: border-box;
 }
+
 .home_section_index_wrap {
     display: flex; justify-content: flex-end;
 }
-    .home_section_index_wrap p {
-        font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100px; padding-right: 15px; letter-spacing: 1px; line-height: 22px;
-    }
-    .home_section_index_wrap div {
-        width: 5vw; height: 11px;
-    }
+
+.home_section_index_wrap p {
+    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100px; padding-right: 15px; letter-spacing: 1px; line-height: 22px;
+}
+
+.home_section_index_wrap div {
+    width:6.77966vw; height: 11px;
+}
+
+.media_subtitle_wrap_container {
+    display: flex;
+}
+
+.media_subtitle {
+    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100;line-height: 22px; letter-spacing: 1px;
+}
+
+.media_subtitle_wrap {
+    display: none;
+    padding-right: 15px;
+}
+
+.media_subtitle_wrap p {
+    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100px; padding-right: 15px; letter-spacing: 1px; line-height: 22px;
+}
+.media_subtitle_wrap div {
+    width:6.77966vw; height: 11px;
+}
 
 .border_color_white {
     border-bottom: 1px solid white;
@@ -47,29 +107,30 @@
 }
 
 .home_section_content {
-    width: 75vw; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;
+    width: 75%; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;
 }
 .home_section_content_wrap {
     width: 45%; height: 60vh;
 }
-    .home_section_content_wrap > div:first-child{
-        font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100;line-height: 22px; letter-spacing: 1px;
-    }
 
 .home_section_content_subwrap {
     width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;
 }
-    .home_section_content_subwrap  h2 {
-        font-family: HugeGothic-Bold; font-size: 72px; font-weight: 100; width: 85%;
-    }
-    .home_section_content_subwrap div {
-        width: 5vw; margin: 36px 0;
-    }
-    .home_section_content_subwrap p {
-        font-family: Galaxie-book; font-size: 18px;  line-height: 28px; width: 85%;
-    }
+
+.home_section_content_subwrap  h2 {
+    font-family: HugeGothic-Bold; font-size: 72px; font-weight: 100; width: 85%;
+}
+
+.home_section_content_subwrap div {
+    width: 5%; margin: 36px 0;
+}
+
+.home_section_content_subwrap p {
+    font-family: Galaxie-book; font-size: 18px;  line-height: 28px; width: 85%;
+}
+
 .home_section_detail {
-    width: 12.5vw; height: 100vh;
+    width: 12.5%; height: 100vh;
 }
 
 
@@ -93,21 +154,27 @@
 .back_img_01 {
     background-image: url(../img/hugeinc.png);
 }
+
 .back_img_02 {
     background-image: url(../img/huge.png);
 }
+
 .back_img_03 {
     background-image: url(../img/hugeinc10.png);
 }
+
 .back_img_04 {
     background-image: url(../img/hugeinc12.png);
 }
+
 .back_img_05 {
     background-image: url(../img/hugeinc2.jpg);
 }
+
 .back_img_06 {
     background-image: url(../img/hugeinc3.jpg);
 }
+
 .back_img_07 {
     background-image: url(../img/hugeinc1.jpg);
 }
@@ -122,27 +189,34 @@
 
 /* width, margin */
 
-.width_100vw {
-    width: 100vw;
+.width_100 {
+    width: 100%;
 }
+
 .margin_auto {
     margin: 0 auto;
 }
+
 .text_align_center {
     text-align: center;
 }
+
 .margin_top_36 {
     margin-top: 36px;
 }
+
 .margin_top_48 {
     margin-top: 48px;
 }
+
 .margin_top_60 {
     margin-top: 60px;
 }
+
 .margin_top_72 {
     margin-top: 72px;
 } 
+
 .margin_top_96 {
     margin-top: 96px;
 } 

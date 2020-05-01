@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    
+    <title>Huge Inc.</title>
+    <meta charset="utf-8">
+
+    <!-- 뷰포트 세팅 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+    <!--사이드 메타 태그 -->
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, web, UI UX,">
+    <meta name="author" content="wook">
+    
+    <!-- 구글 웹폰트 링크 -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
+
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/careers.css"> 
+    <!-- 홈 화면 css -->
+
+
+    <script>
+
+      /* 변수 선언 */
+
+      var header_state = 0; /* 헤더 상태 */
+      
+      
+          function logoClick() {
+              if (header_state == 0 ) {
+                  document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.5s; animation-fill-mode:forwards;"; 
+                  header_state = 1; /* 헤더 visible 상태로 기억 */
+
+                  document.getElementById('main').style = "padding-top: 440px;";
+              } 
+
+              else {
+                  document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.5s;"; 
+
+                  document.getElementById('main').style = "padding-top: 0px;";
+                  header_state = 0; /* 헤더 hidden 상태로 기억 */
+              }
+          }
+  
+          
+      </script>
+
+      
+</head>
+
+
+
+<body>
+
+<!-- home 로고 -->
+  <div id="logo" onclick="logoClick()">H</div>
+
+
+<!-- 메뉴바 시작 -->
+<header id="home_header">
+  <nav class="gnb"> 
+      <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
+          <li>
+              <a href="index.html">Hello.</a>
+              <p class="color_black">Today at Huge.</p>
+              <div></div>
+          </li>
+          <li>
+              <a href="work.html">Work.</a>
+              <p class="color_black">What we've made.</p>
+              <div></div>
+          </li>  
+          <li>
+              <a href="about.html">About.</a>
+              <p class="color_black">Who we are.</p>
+              <div></div>
+          </li>  
+          <li>
+              <a href="careers.html">Careers.</a>
+              <p class="color_black">Join the team.</p>
+              <div></div>
+          </li>  
+          <li>
+              <a href="contact.html">Contact.</a>
+              <p class="color_black">Get in touch.</p>
+              <div></div>
+          </li>  
+          
+      </ul> <!-- 메뉴 ul 끝 -->
+  
+  <div class="gnb_aside"> 
+      <p class="color_black">Explore our thought leadership at</p> 
+      <a>MAGENTA<span>.</span></a> 
+  </div>
+  </nav>
+
+</header>
+<!-- 메뉴바 끝 -->
+
+<main id="main">
+
+  <section class="hero_video">
+
+    <video autoplay muted loop poster="img/careers/hugeInc_recruting.png">
+      
+        <source src="video/huge_careers.mp4" type="video/mp4">
+        당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
+    </video>
+
+  </section>
+
+
+
+  <section class="careers_action">
+
+    <div class="careers_action_container">
+
+      <h3 class="careers_action_title h3_serif">Our commitment to diversity, equity and inclusion has shaped our values.</h3>
+      <p class="careers_action_text">Huge believes that belonging and community are fostered when we give a shit about equality, inclusion, and accessibility. We're at our best when everyone is engaged and contributing to a more diverse and inclusive workplace.</p>
+      <h5><a class="careers_action_button color_white">View open positions</a></h5>
+
+    </div>
+
+  </section>
+
+  <section class="careers_why">
+
+    <div class="careers_why_container">
+
+      <div class="section_subtitle">
+
+        <hr class="section_subtitle_rule_black">
+
+        <h6>Why huge?</h6>
+
+      </div>
+
+      <div class="careers_why_content">
+
+        <h3 class="careers_why_title h3_serif">What would the world be like if companies put user needs first?</h3>
+        <p class="careers_why_text_1">Huge was founded in an attempt to answer this question. Two decades later we've demonstrated that industries change and lives are improved when design, technology, and communications come together to solve problems for people. To do this, we've built a company of experts with diverse backgrounds who believe technology should be used to deliver better services and experiences for people. We give them the freedom to make things that matter, working alongside colleagues they respect.</p>
+        <p class="careers_why_text_2">We're a company that prizes entrepreneurialism and embraces constant change. Over the years, five perspectives have come to define the way we work:</p>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+  <section class="careers_ways">
+
+    <div class="careers_ways_container">
+
+      <div class="section_subtitle_nopadding">
+
+        <hr class="section_subtitle_rule_white">
+
+        <h6 class="color_white">5 ways.</h6>
+
+      </div>
+
+      <ul class="careers_ways_list">
+        <li>
+          <div>
+            <h2 class="color_white">Be honest.</h2>
+            <p class="color_white">Don’t be afraid to say what you think. Strong teams are built on different perspectives.</p>
+          </div>
+          <p class="color_white">I</p>
+        </li>
+
+        <li>
+          <div>
+            <h2 class="color_white">Embrace the unknown.</h2>
+            <p class="color_white">The future is uncertain, but you can be ready for it.</p>
+          </div>
+          <p class="color_white">II</p>
+        </li>
+
+        <li>
+          <div>
+            <h2 class="color_white">Take chances.</h2>
+            <p class="color_white">You can’t be right until you know what’s wrong.</p>
+          </div>
+          <p class="color_white">III</p>
+        </li>
+
+        <li>
+          <div>
+            <h2 class="color_white">Ideas over egos.</h2>
+            <p class="color_white">Listen to others and save your energy for what matters.</p>
+          </div>
+          <p class="color_white">IV</p>
+        </li>
+
+        <li>
+          <div>
+            <h2 class="color_white">Give a shit.</h2>
+            <p class="color_white">If you don’t care, why should anyone else?</p>
+          </div>
+          <p class="color_white">V</p>
+        </li>
+        
+      </ul>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <section class="about_magenta">
+    <div>
+        <div class="about_magenta_container">
+            <a class="about_magenta_img">
+            <a class="about_magenta_content">
+                <h2 class="about_magenta_title color_white">Greatly simplified to focus on accessible design.</h2>
+                <p class="about_magenta_text color_white">Her technical expertise launched a billion phone calls, yet now she is routinely thwarted by what many hail as one of the most accessible UIs on the planet.</p>
+            </a>
+        </a>
+    </div>
+  </section>
+
+
+
+
+
+</main>
+
+
+
+
+<!-- footer시작 -->
+
+<footer class="home_footer bg_color_black">
+
+    <div>
+
+        <div class="footer_content_left color_white">
+            <div>HUGE</div>
+            <p>Make somerthing you love.</p>
+        </div>
+
+        <div class="footer_content_right">
+            <div>
+                <a href="hello.html">Hello</a>
+                <a href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+                CCPA Privacy Notice<br>
+                Modern Slavery Act Statement</div>
+        </div>
+
+    </div>
+
+
+    
+
+
+</footer>
+
+
+<!-- footer끝 -->
+
+
+
+</body>
+
+
+
+
+</html>

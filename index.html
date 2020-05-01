@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 css -->
     <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 css -->
     <link rel="stylesheet" type="text/css" href="css/home.css"> <!-- 홈 화면 css -->
+    <link rel="stylesheet" type="text/css" href="css/media.css"> <!-- 미디어쿼리 -->
 
 
     <script>
@@ -31,17 +32,24 @@
         
             function logoClick() {
                 if (header_state == 0 ) {
-                    document.getElementById("home_header").style ="visibility:visible;"; header_state = 1; /* 헤더 visible 상태로 기억 */
+                    document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.5s; animation-fill-mode:forwards;"; 
+                    header_state = 1; /* 헤더 visible 상태로 기억 */
+
+                    document.getElementById('main').style = "padding-top: 440px;";
                 } 
+
                 else {
-                    document.getElementById("home_header").style ="visibility:hidden;"; header_state = 0; /* 헤더 hidden 상태로 기억 */
+                    document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.5s;"; 
+
+                    document.getElementById('main').style = "padding-top: 0px;";
+                    header_state = 0; /* 헤더 hidden 상태로 기억 */
                 }
             }
     
             
         </script>
 
-
+        
 </head>
 
 
@@ -53,368 +61,416 @@
 
 
  <!-- 메뉴바 시작 -->
-    <header id="home_header">
-        <nav class="gnb"> 
-            <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
-                <li>
-                    <a href="index.html">Hello.</a>
-                    <p class="color_black">Today at Huge.</p>
-                    <div></div>
-                </li>
-                <li>
-                    <a href="work.html">Work.</a>
-                    <p class="color_black">What we've made.</p>
-                    <div></div>
-                </li>  
-                <li>
-                    <a href="about.html">About.</a>
-                    <p class="color_black">Who we are.</p>
-                    <div></div>
-                </li>  
-                <li>
-                    <a href="careers.html">Careers.</a>
-                    <p class="color_black">Join the team.</p>
-                    <div></div>
-                </li>  
-                <li>
-                    <a href="contact.html">Contact.</a>
-                    <p class="color_black">Get in touch.</p>
-                    <div></div>
-                </li>  
-                
-            </ul> <!-- 메뉴 ul 끝 -->
-        
-        <div class="gnb_aside"> 
-            <p class="color_black">Explore our thought leadership at</p> 
-            <a>MAGENTA<span>.</span></a> 
-        </div>
-        </nav>
-
-    </header>
-<!-- 메뉴바 끝 -->
-
-<section id="home_hello"> <!--첫 페이지 시작-->
-    
-
-     
-    <div class="main_section">
-        <h1 class="main_hello">
-                Hello.</h1>
-        <div class="main_bottom_bar">
-            <div class="main_bottom_bar_content">Today at Huge.</div>
-            <div class="main_bottom_bar_line"></div>
-        </div>
+<header id="home_header">
+    <nav class="gnb"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
+            <li>
+                <a href="index.html">Hello.</a>
+                <p class="color_black">Today at Huge.</p>
+                <div></div>
+            </li>
+            <li>
+                <a href="work/work.html">Work.</a>
+                <p class="color_black">What we've made.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="about/about.html">About.</a>
+                <p class="color_black">Who we are.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="careers/careers.html">Careers.</a>
+                <p class="color_black">Join the team.</p>
+                <div></div>
+            </li>  
+            <li>
+                <a href="contact/contact.html">Contact.</a>
+                <p class="color_black">Get in touch.</p>
+                <div></div>
+            </li>  
             
+        </ul> <!-- 메뉴 ul 끝 -->
+    
+    <div class="gnb_aside"> 
+        <p class="color_black">Explore our thought leadership at</p> 
+        <a>MAGENTA<span>.</span></a> 
     </div>
-</section>
-   
-    <!--첫 페이지 끝-->
+    </nav>
 
-
-    <!--Home 두번째 섹션-->
-
-<section id="home_01"> <!--Home 두번째 섹션 시작-->
-
-    <div class="home_section_wrap back_img_01" > <!--Home 두번째 섹션 wrap 시작-->
-         <div class="home_section_index" > <!--Home 두번째 섹션 index 시작-->
-            <div class="home_section_index_wrap">
-                <p class="color_white">01.</p>
-                <div class="border_color_white"></div>
-            </div>
-        </div> <!--Home 두번째 섹션 index 끝-->
+</header>
+<!-- 메뉴바 끝 -->
+<!-- 메뉴바 끝 -->
+<main id="main">
     
-        <div class="home_section_content"> <!--Home 두번째 섹션 content 시작-->
-
-            <div class="home_section_content_wrap">
-                <div class="color_white">Win.</div>
-
-                <div class="home_section_content_subwrap">
-                    <h2 class="color_white">Huge Thanks.</h2>
-                    <div class="border_color_white"></div>
-                    <p class="color_white">Campaign US named Huge its 2019 Innovation Agency of the Year</p>
-                </div>
-
-            </div>
-
-        </div> <!--Home 두번째 섹션 content 끝-->
+    <section> <!--첫 페이지 시작-->
         
-        <div class="home_section_detail"> <!--Home 두번째 섹션 detail 시작-->
-
-        </div> <!--Home 두번째 섹션 detail 끝-->
-    
-    
-    </div> <!--Home 두번째 섹션 wrap 끝-->
-
-</section> <!--Home 두번째 섹션 끝-->
-
-
-
-
-<section id="home_02"> <!--Home 세번째 섹션 시작-->
-
-
-    <div class="home_section_wrap back_img_02"> <!--Home 세번째 섹션 wrap 시작-->
-
-        <div class="home_section_index"> <!--Home 세번째 섹션 index 시작-->
-            <div class="home_section_index_wrap">
-                <p class="color_white">02.</p>
-                <div class="border_color_white"></div>
+        <div class="main_section">
+            <h1 class="main_hello">
+                    Hello.</h1>
+            <h1 class="main_hi">
+                Hi.</h1>
+            
+            <div class="main_bottom_bar">
+                <div class="main_bottom_bar_content">Today at Huge.</div>
+                <div class="main_bottom_bar_line"></div>
             </div>
-        </div>  <!--Home 세번째 섹션 index 끝-->
-
-        
-        <div class="home_section_content"> <!--Home 세번째 섹션 content 시작-->
-            <div class="home_section_content_wrap">
-                <div class="color_white">Work.</div>
-
-                <div class="home_section_content_subwrap">
-                    <h2 class=color_white>#FreeThePeriod.</h2>
-                    <div class="border_color_white"></div>
-                    <p class="color_white">To highlight period inequality, Huge partnered with PERIOD, to build a coin-operated toliet paper dispenser and installed it in men's restrooms.
-                    </p>
-                </div>
-            </div>
-        </div> <!--Home 세번째 섹션 content 끝-->
-
-        <div class="home_section_detail"></div> <!--Home 세번째 섹션 detail -->
-
-
-
-    </div> <!--Home 세번째 섹션 wrap 끝-->
-
-
-
-</section> <!--Home 세번째 섹션 끝-->
-
-
-
-<section id="home_03"> <!--Home 네번째 섹션 시작-->
-
-
-    <div class="home_section_wrap back_img_03"> <!--Home 네번째 섹션 wrap 시작-->
-
-        <div class="home_section_index"> <!--Home 네번째 섹션 index 시작-->
-            <div class="home_section_index_wrap">
-                <p class="color_black">03.</p>
-                <div class="border_color_black"></div>
-            </div>
-        </div>  <!--Home 네번째 섹션 index 끝-->
-
-        
-        <div class="home_section_content"> <!--Home 네번째 섹션 content 시작-->
-            <div class="home_section_content_wrap">
-                <div>Leadership.</div>
-
-                <div class="home_section_content_subwrap">
-                    <h2>Huge Appointment.</h2>
-                    <div class="border_color_black"></div>
-                    <p class="color_black">After three years leading global strategin growth for Huge, Matt Weriss has been appointed President, Huge BK.
-                    </p>
-                </div>
-            </div>
-        </div> <!--Home 네번째 섹션 content 끝-->
-        <div class="home_section_detail"></div> <!--Home 네번째 섹션 detail -->
-
-
-
-    </div> <!--Home 네번째 섹션 wrap 끝-->
-
-
-
-</section> <!--Home 네번째 섹션 끝-->
-
-
-
-
-<section id="home_04"> <!--Home 다섯번째 섹션 시작-->
-
-
-    <div class="home_section_wrap back_img_04"> <!--Home 다섯번째 섹션 wrap 시작-->
-
-        <div class="home_section_index"> <!--Home 다섯번째 섹션 index 시작-->
-            <div class="home_section_index_wrap">
-                <p class="color_white">04.</p>
-                <div class="border_color_white"></div>
-            </div>
-        </div>  <!--Home 다섯번째 섹션 index 끝-->
-
-        
-        <div class="home_section_content"> <!--Home 다섯번째 섹션 content 시작-->
-            <div class="home_section_content_wrap">
-                <div class="color_white">Work.</div>
-
-                <div class="home_section_content_subwrap">
-                    <h2 class="color_white">It's in the bag.</h2>
-                    <div class="border_color_white"></div>
-                    <p class="color_white">Huge rebrands grocery delivery service Shipt.
-                    </p>
-                </div>
-            </div>
-        </div> <!--Home 다섯번째 섹션 content 끝-->
-        <div class="home_section_detail"></div> <!--Home 다섯번째 섹션 detail -->
-
-
-
-    </div> <!--Home 다섯번째 섹션 wrap 끝-->
-
-
-
-</section> <!--Home 다섯번째 섹션 끝-->
-
-
-
-
-
-
-<section id="home_05"> <!--Home 여섯번째 섹션 시작-->
-
-
-    <div class="home_section_wrap back_img_05"> <!--Home 여섯번째 섹션 wrap 시작-->
-
-        <div class="home_section_index"> <!--Home 여섯번째 섹션 index 시작-->
-            <div class="home_section_index_wrap">
-                <p class="color_black">05.</p>
-                <div class="border_color_black"></div>
-            </div>
-        </div>  <!--Home 여섯번째 섹션 index 끝-->
-
-        
-        <div class="home_section_content"> <!--Home 여섯번째 섹션 content 시작-->
-            <div class="home_section_content_wrap">
-                <div>Leadership.</div>
-
-                <div class="home_section_content_subwrap">
-                    <h2>Hello Fura.</h2>
-                    <div class="border_color_black"></div>
-                    <p class="color_black">Huge welcomes Fura Johannesdottir as Chief Design Officer.
-                    </p>
-                </div>
-            </div>
-        </div> <!--Home 여섯번째 섹션 content 끝-->
-        <div class="home_section_detail"></div> <!--Home 여섯번째 섹션 detail -->
-
-
-
-    </div> <!--Home 여섯번째 섹션 wrap 끝-->
-
-
-
-</section> <!--Home 여섯번째 섹션 끝-->
-
-
-
-<section id="home_06"> <!--Home 일곱번째 섹션 시작-->
-
-
-    <div class="home_section_wrap back_img_06"> <!--Home 일곱번째 섹션 wrap 시작-->
-
-        <div class="home_section_index"> <!--Home 일곱번째 섹션 index 시작-->
-            <div class="home_section_index_wrap">
-                <p class="color_white">06.</p>
-                <div class="border_color_white"></div>
-            </div>
-        </div>  <!--Home 일곱번째 섹션 index 끝-->
-
-        
-        <div class="home_section_content"> <!--Home 일곱번째 섹션 content 시작-->
-            <div class="home_section_content_wrap">
-                <div class="color_white">Work.</div>
-
-                <div class="home_section_content_subwrap">
-                    <h2 class="color_white">#Colorcommentary</h2>
-                    <div class="border_color_white"></div>
-                    <p class="color_white">Huge partnered with Pantone on a social media campaign for the Big game.
-                    </p>
-                </div>
-            </div>
-        </div> <!--Home 일곱번째 섹션 content 끝-->
-        <div class="home_section_detail"></div> <!--Home 일곱번째 섹션 detail -->
-
-
-
-    </div> <!--Home 일곱번째 섹션 wrap 끝-->
-
-
-
-</section> <!--Home 일곱번째 섹션 끝-->
-
-
-
-
-<section id="home_07"> <!--Home 여덟번째 섹션 시작-->
-
-
-    <div class="home_section_wrap back_img_07"> <!--Home 여덟번째 섹션 wrap 시작-->
-
-        <div class="home_section_index"> <!--Home 여덟번째 섹션 index 시작-->
-            <div class="home_section_index_wrap">
-                <p class="color_black">07.</p>
-                <div class="border_color_black"></div>
-            </div>
-        </div>  <!--Home 여덟번째 섹션 index 끝-->
-
-        
-        <div class="home_section_content"> <!--Home 여덟번째 섹션 content 시작-->
-            <div class="home_section_content_wrap">
-                <div>Culture.</div>
-
-                <div class="home_section_content_subwrap">
-                    <h2>Black History Month.</h2>
-                    <div class="border_color_black"></div>
-                    <p class="color_black">This is not a moment, issa movement. H by Jacqueline DeBerry
-                    </p>
-                </div>
-            </div>
-        </div> <!--Home 여덟번째 섹션 content 끝-->
-        <div class="home_section_detail"></div> <!--Home 여덟번째 섹션 detail -->
-
-
-
-    </div> <!--Home 여덟번째 섹션 wrap 끝-->
-
-
-
-</section> <!--Home 여덟번째 섹션 끝-->
-
-
-<!-- footer시작 -->
-
-<footer class="home_footer bg_color_black">
-
-    <div>
-
-        <div class="footer_content_left color_white">
-            <div>HUGE</div>
-            <p>Make somerthing you live.</p>
+                
         </div>
-
-        <div class="footer_content_right">
-            <div>
-                <a href="hello.html">Hello</a>
-                <a href="work.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="careers.html">Careers</a>
-                <a href="contact.html">Contact</a>
+    </section>
+        <!--첫 페이지 끝-->
+    
+    
+        <!--Home 두번째 섹션-->
+    
+    <section id="home_01"> <!--Home 두번째 섹션 시작-->
+    
+        <div class="home_section_wrap back_img_01" > <!--Home 두번째 섹션 wrap 시작-->
+             <div class="home_section_index" > <!--Home 두번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="color_white">01.</p>
+                    <div class="border_color_white"></div>
+                </div>
+            </div> <!--Home 두번째 섹션 index 끝-->
+        
+            <div class="home_section_content"> <!--Home 두번째 섹션 content 시작-->
+    
+                <div class="home_section_content_wrap">
+                    
+                    <div class="media_subtitle_wrap_container">
+                        <div class="media_subtitle_wrap">
+                            <p class="color_white">01.</p>
+                            <div class="border_color_white"></div>
+                        </div>
+                        <div class="media_subtitle color_white">Win.</div>
+                    </div>
+    
+    
+                    <div class="home_section_content_subwrap">
+                        <h2 class="color_white">Huge Thanks.</h2>
+                        <div class="border_color_white"></div>
+                        <p class="color_white">Campaign US named Huge its 2019 Innovation Agency of the Year</p>
+                    </div>
+    
+                </div>
+    
+            </div> <!--Home 두번째 섹션 content 끝-->
+            
+            <div class="home_section_detail"> <!--Home 두번째 섹션 detail 시작-->
+    
+            </div> <!--Home 두번째 섹션 detail 끝-->
+        
+        
+        </div> <!--Home 두번째 섹션 wrap 끝-->
+    
+    </section> <!--Home 두번째 섹션 끝-->
+    
+    
+    
+    
+    <section id="home_02"> <!--Home 세번째 섹션 시작-->
+    
+    
+        <div class="home_section_wrap back_img_02"> <!--Home 세번째 섹션 wrap 시작-->
+    
+            <div class="home_section_index"> <!--Home 세번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="color_white">02.</p>
+                    <div class="border_color_white"></div>
+                </div>
+            </div>  <!--Home 세번째 섹션 index 끝-->
+    
+            
+            <div class="home_section_content"> <!--Home 세번째 섹션 content 시작-->
+                <div class="home_section_content_wrap">
+                    <div class="media_subtitle_wrap_container">
+                        <div class="media_subtitle_wrap">
+                            <p class="color_white">02.</p>
+                            <div class="border_color_white"></div>
+                        </div>
+                        <div class="media_subtitle color_white">Work.</div>
+                    </div>
+    
+                    <div class="home_section_content_subwrap">
+                        <h2 class=color_white>#FreeThePeriod.</h2>
+                        <div class="border_color_white"></div>
+                        <p class="color_white">To highlight period inequality, Huge partnered with PERIOD, to build a coin-operated toliet paper dispenser and installed it in men's restrooms.
+                        </p>
+                    </div>
+                </div>
+            </div> <!--Home 세번째 섹션 content 끝-->
+    
+            <div class="home_section_detail"></div> <!--Home 세번째 섹션 detail -->
+    
+    
+    
+        </div> <!--Home 세번째 섹션 wrap 끝-->
+    
+    
+    
+    </section> <!--Home 세번째 섹션 끝-->
+    
+    
+    
+    <section id="home_03"> <!--Home 네번째 섹션 시작-->
+    
+    
+        <div class="home_section_wrap back_img_03"> <!--Home 네번째 섹션 wrap 시작-->
+    
+            <div class="home_section_index"> <!--Home 네번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="color_black">03.</p>
+                    <div class="border_color_black"></div>
+                </div>
+            </div>  <!--Home 네번째 섹션 index 끝-->
+    
+            
+            <div class="home_section_content"> <!--Home 네번째 섹션 content 시작-->
+                <div class="home_section_content_wrap">
+                    <div class="media_subtitle_wrap_container">
+                        <div class="media_subtitle_wrap">
+                            <p class="color_black">03.</p>
+                            <div class="border_color_black"></div>
+                        </div>
+                        <div class="media_subtitle color_black">Leadership.</div>
+                    </div>
+    
+                    <div class="home_section_content_subwrap">
+                        <h2>Huge Appointment.</h2>
+                        <div class="border_color_black"></div>
+                        <p class="color_black">After three years leading global strategin growth for Huge, Matt Weriss has been appointed President, Huge BK.
+                        </p>
+                    </div>
+                </div>
+            </div> <!--Home 네번째 섹션 content 끝-->
+            <div class="home_section_detail"></div> <!--Home 네번째 섹션 detail -->
+    
+    
+    
+        </div> <!--Home 네번째 섹션 wrap 끝-->
+    
+    
+    
+    </section> <!--Home 네번째 섹션 끝-->
+    
+    
+    
+    
+    <section id="home_04"> <!--Home 다섯번째 섹션 시작-->
+    
+    
+        <div class="home_section_wrap back_img_04"> <!--Home 다섯번째 섹션 wrap 시작-->
+    
+            <div class="home_section_index"> <!--Home 다섯번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="color_white">04.</p>
+                    <div class="border_color_white"></div>
+                </div>
+            </div>  <!--Home 다섯번째 섹션 index 끝-->
+    
+            
+            <div class="home_section_content"> <!--Home 다섯번째 섹션 content 시작-->
+                <div class="home_section_content_wrap">
+                    <div class="media_subtitle_wrap_container">
+                        <div class="media_subtitle_wrap">
+                            <p class="color_white">04.</p>
+                            <div class="border_color_white"></div>
+                        </div>
+                        <div class="media_subtitle color_white">Work.</div>
+                    </div>
+    
+                    <div class="home_section_content_subwrap">
+                        <h2 class="color_white">It's in the bag.</h2>
+                        <div class="border_color_white"></div>
+                        <p class="color_white">Huge rebrands grocery delivery service Shipt.
+                        </p>
+                    </div>
+                </div>
+            </div> <!--Home 다섯번째 섹션 content 끝-->
+            <div class="home_section_detail"></div> <!--Home 다섯번째 섹션 detail -->
+    
+    
+    
+        </div> <!--Home 다섯번째 섹션 wrap 끝-->
+    
+    
+    
+    </section> <!--Home 다섯번째 섹션 끝-->
+    
+    
+    
+    
+    
+    
+    <section id="home_05"> <!--Home 여섯번째 섹션 시작-->
+    
+    
+        <div class="home_section_wrap back_img_05"> <!--Home 여섯번째 섹션 wrap 시작-->
+    
+            <div class="home_section_index"> <!--Home 여섯번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="color_black">05.</p>
+                    <div class="border_color_black"></div>
+                </div>
+            </div>  <!--Home 여섯번째 섹션 index 끝-->
+    
+            
+            <div class="home_section_content"> <!--Home 여섯번째 섹션 content 시작-->
+                <div class="home_section_content_wrap">
+                    <div class="media_subtitle_wrap_container">
+                        <div class="media_subtitle_wrap">
+                            <p class="color_black">05.</p>
+                            <div class="border_color_black"></div>
+                        </div>
+                        <div class="media_subtitle color_black">Leadership.</div>
+                    </div>
+    
+                    <div class="home_section_content_subwrap">
+                        <h2>Hello Fura.</h2>
+                        <div class="border_color_black"></div>
+                        <p class="color_black">Huge welcomes Fura Johannesdottir as Chief Design Officer.
+                        </p>
+                    </div>
+                </div>
+            </div> <!--Home 여섯번째 섹션 content 끝-->
+            <div class="home_section_detail"></div> <!--Home 여섯번째 섹션 detail -->
+    
+    
+    
+        </div> <!--Home 여섯번째 섹션 wrap 끝-->
+    
+    
+    
+    </section> <!--Home 여섯번째 섹션 끝-->
+    
+    
+    
+    <section id="home_06"> <!--Home 일곱번째 섹션 시작-->
+    
+    
+        <div class="home_section_wrap back_img_06"> <!--Home 일곱번째 섹션 wrap 시작-->
+    
+            <div class="home_section_index"> <!--Home 일곱번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="color_white">06.</p>
+                    <div class="border_color_white"></div>
+                </div>
+            </div>  <!--Home 일곱번째 섹션 index 끝-->
+    
+            
+            <div class="home_section_content"> <!--Home 일곱번째 섹션 content 시작-->
+                <div class="home_section_content_wrap">
+                    <div class="media_subtitle_wrap_container">
+                        <div class="media_subtitle_wrap">
+                            <p class="color_white">06.</p>
+                            <div class="border_color_white"></div>
+                        </div>
+                        <div class="media_subtitle color_white">Work.</div>
+                    </div>
+    
+                    <div class="home_section_content_subwrap">
+                        <h2 class="color_white">#Colorcommentary</h2>
+                        <div class="border_color_white"></div>
+                        <p class="color_white">Huge partnered with Pantone on a social media campaign for the Big game.
+                        </p>
+                    </div>
+                </div>
+            </div> <!--Home 일곱번째 섹션 content 끝-->
+            <div class="home_section_detail"></div> <!--Home 일곱번째 섹션 detail -->
+    
+    
+    
+        </div> <!--Home 일곱번째 섹션 wrap 끝-->
+    
+    
+    
+    </section> <!--Home 일곱번째 섹션 끝-->
+    
+    
+    
+    
+    <section id="home_07"> <!--Home 여덟번째 섹션 시작-->
+    
+    
+        <div class="home_section_wrap back_img_07"> <!--Home 여덟번째 섹션 wrap 시작-->
+    
+            <div class="home_section_index"> <!--Home 여덟번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="color_black">07.</p>
+                    <div class="border_color_black"></div>
+                </div>
+            </div>  <!--Home 여덟번째 섹션 index 끝-->
+    
+            
+            <div class="home_section_content"> <!--Home 여덟번째 섹션 content 시작-->
+                <div class="home_section_content_wrap">
+                    <div class="media_subtitle_wrap_container">
+                        <div class="media_subtitle_wrap">
+                            <p class="color_black">07.</p>
+                            <div class="border_color_black"></div>
+                        </div>
+                        <div class="media_subtitle color_black">Culture.</div>
+                    </div>
+    
+                    <div class="home_section_content_subwrap">
+                        <h2>Black History Month.</h2>
+                        <div class="border_color_black"></div>
+                        <p class="color_black">This is not a moment, issa movement. H by Jacqueline DeBerry
+                        </p>
+                    </div>
+                </div>
+            </div> <!--Home 여덟번째 섹션 content 끝-->
+            <div class="home_section_detail"></div> <!--Home 여덟번째 섹션 detail -->
+    
+    
+    
+        </div> <!--Home 여덟번째 섹션 wrap 끝-->
+    
+    
+    
+    </section> <!--Home 여덟번째 섹션 끝-->
+    
+    
+</main>
+    <!-- footer시작 -->
+    
+    <footer class="home_footer bg_color_black">
+    
+        <div class="home_footer_wrap">
+    
+            <div class="footer_content_left color_white">
+                <div>HUGE</div>
+                <p>Make somerthing you live.</p>
             </div>
-
-            <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
-                CCPA Privacy Notice<br>
-                Modern Slavery Act Statement</div>
+    
+            <div class="footer_content_right">
+                <div>
+                    <a href="hello.html">Hello</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+    
+                <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+                    CCPA Privacy Notice<br>
+                    Modern Slavery Act Statement</div>
+            </div>
+    
         </div>
+    
+    
+    
+    </footer>
+    
+    
+    
+    
+    <!-- footer끝 -->
+    
+    
 
-    </div>
-
-
-
-</footer>
-
-
-
-
-<!-- footer끝 -->
-
-
-
+ 
 </body>
 
 
