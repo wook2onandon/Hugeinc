@@ -107,7 +107,7 @@
 }
 
 .home_section_content {
-    width: 75%; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;
+    width: 74.68354%; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;
 }
 .home_section_content_wrap {
     width: 45%; height: 60vh;
@@ -117,12 +117,12 @@
     width: 100%; height: calc(100% - 22px); display: flex; flex-direction: column; justify-content: center;
 }
 
-.home_section_content_subwrap  h2 {
+.home_section_content_subwrap h2 {
     font-family: HugeGothic-Bold; font-size: 72px; font-weight: 100; width: 85%;
 }
 
 .home_section_content_subwrap div {
-    width: 5%; margin: 36px 0;
+    width:6.77966vw; margin: 36px 0;
 }
 
 .home_section_content_subwrap p {

@@ -11,6 +11,10 @@
 }
 
 /* 텍스트 */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
 h1,
 h2,
@@ -284,14 +288,13 @@ nav {
 
 .home_footer {
   width: 100%;
-  height: 240px;
+  height: auto;
   padding: 70px 0 80px;
-  box-sizing: border-box;
 }
 
-.home_footer_wrap{
+.home_footer_wrap {
   width: 100%;
-  height: 90px;
+  height: auto;
   padding: 0 calc(12.5% + 15px);
   display: flex;
   justify-content: space-between;
@@ -302,7 +305,7 @@ nav {
   align-items: center;
 }
 
-.footer_content_left > div {
+.footer_content_left_logo {
   font-family: HugeGothic-Bold;
   font-size: 36px;
   line-height: 36px;
@@ -312,18 +315,19 @@ nav {
   letter-spacing: 2px;
 }
 
-.footer_content_left > p {
+.footer_content_left_text {
   font-family: HugeGothic-Bold;
   font-size: 18px;
   line-height: 36px;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 .footer_content_right {
   display: flex;
   flex-direction: column;
 }
+
 .footer_content_right > div {
   font-family: HugeGothic-Bold;
   font-size: 14px;
