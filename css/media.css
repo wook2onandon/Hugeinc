@@ -31,6 +31,7 @@
     width: 700px;
     left: calc(50% - 330px);
   }
+
 }
 
 @media screen and (max-width:767px) {
@@ -229,6 +230,13 @@
     width: 69.38776%;
   }
 
+  .footer_content_right a {
+    margin: 0 11px 6px 0;
+  }
+  
+  .footer_content_right a:last-child {
+    margin-right: 0;
+  }
   .footer_aside {
     padding-top: 10px;
   }

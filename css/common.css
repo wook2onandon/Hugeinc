@@ -395,7 +395,7 @@ nav {
 }
 
 .footer_content_right a {
-  margin-right: 16px;
+  margin: 0 16px 6px 0;
 }
 
 .footer_content_right a:last-child {
