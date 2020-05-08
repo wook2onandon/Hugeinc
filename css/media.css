@@ -32,6 +32,10 @@
     left: calc(50% - 330px);
   }
 
+  .home_footer {
+    padding: 120px 0 100px 0;
+  }
+
 }
 
 @media screen and (max-width:767px) {
@@ -251,4 +255,15 @@
     font-size: 12px;  
     line-height: 22px;
   }
+}
+
+@media screen and (max-width:380px) {
+
+  .home_section_content_title {
+    display: none;
+  }
+
+  .home_section_content_title_m {
+    display: block;
+}
 }
