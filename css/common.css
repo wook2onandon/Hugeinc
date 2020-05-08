@@ -298,6 +298,7 @@ nav {
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -1px;
+  white-space: nowrap;
 }
 
 .menu_hr {
