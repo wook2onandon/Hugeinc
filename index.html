@@ -31,20 +31,61 @@
         
         
             function logoClick() {
+
+        if (document.body.clientWidth > 767)
+
+                {
                 if (header_state == 0 ) {
-                    document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.5s; animation-fill-mode:forwards;"; 
-                    header_state = 1; /* 헤더 visible 상태로 기억 */
+                    document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.3s; animation-fill-mode:forwards;"; 
 
                     document.getElementById('main').style = "padding-top: 440px;";
+
+                    document.getElementById("logo").style.display = "none";
+
+                    document.getElementById("logo_open").style.display = "flex";
+
+                    header_state = 1; /* 헤더 visible 상태로 기억 */
+
                 } 
 
                 else {
-                    document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.5s;"; 
+                    document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.3s;"; 
+
+                    document.getElementById("logo").style.display = "flex";
+
+                    document.getElementById("logo_open").style.display = "none";
+
+                    document.getElementById('main').style = "padding-top: 0px;";
+                    header_state = 0; /* 헤더 hidden 상태로 기억 */
+                }
+
+                }
+
+
+            else { if (header_state == 0 ) {
+                    document.getElementById("home_header").style ="animation-name: header_animation_open_m; animation-duration: 0.3s; animation-fill-mode:forwards;"; 
+                    document.getElementById("logo").style.display = "none";
+
+                    document.getElementById("logo_open").style.display = "flex";
+
+                    document.getElementById('main').style = "padding-top: 440px;";
+
+                    header_state = 1; /* 헤더 visible 상태로 기억 */
+
+                } 
+
+                else {
+                    document.getElementById("home_header").style ="animation-name: header_animation_close_m; animation-duration: 0.3s;"; 
+
+                    document.getElementById("logo").style.display = "flex";
+
+                    document.getElementById("logo_open").style.display = "none";
 
                     document.getElementById('main').style = "padding-top: 0px;";
                     header_state = 0; /* 헤더 hidden 상태로 기억 */
                 }
             }
+        }
     
             
         </script>
@@ -56,39 +97,59 @@
 
 <body>
 
- <!-- home 로고 -->
+  <!-- home 로고 -->
     <div id="logo" onclick="logoClick()">H</div>
+    <div id="logo_open" onclick="logoClick()">HUGE</div>
 
 
- <!-- 메뉴바 시작 -->
+  <!-- 메뉴바 시작 -->
 <header id="home_header">
     <nav class="gnb"> 
-        <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
-            <li>
-                <a href="index.html">Hello.</a>
-                <p class="color_black">Today at Huge.</p>
-                <div></div>
+        <ul class="menu_container"> <!-- 메뉴 ul 시작 -->
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="index.html">Hello.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Today at Huge.</p>
+                </div>
+                <div class="menu_hr"></div>
             </li>
-            <li>
-                <a href="work/work.html">Work.</a>
-                <p class="color_black">What we've made.</p>
-                <div></div>
-            </li>  
-            <li>
-                <a href="about/about.html">About.</a>
-                <p class="color_black">Who we are.</p>
-                <div></div>
-            </li>  
-            <li>
-                <a href="careers/careers.html">Careers.</a>
-                <p class="color_black">Join the team.</p>
-                <div></div>
-            </li>  
-            <li>
-                <a href="contact/contact.html">Contact.</a>
-                <p class="color_black">Get in touch.</p>
-                <div></div>
-            </li>  
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="work/work.html">Work.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">What we've made.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="about/about.html">About.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Who we are.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="careers/careers.html">Careers.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Join the team.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="contact/contact.html">Contact.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Get in touch.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
             
         </ul> <!-- 메뉴 ul 끝 -->
     
