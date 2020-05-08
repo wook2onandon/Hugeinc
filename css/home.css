@@ -45,11 +45,11 @@
 }
 
 .main_bottom_bar_content {
-    font-family: Galaxie-book; font-size: 15px; color:black; font-weight: 100; padding-bottom:80px; text-align: center;
+    font-family: Galaxie-book; font-size: 15px; color:black; font-weight: 100; padding-bottom: 60px; text-align: center;
 }
 
 .main_bottom_bar_line {
-    border-left: 1px solid black; width:20px; height:50px; position: absolute; bottom:0;
+    border-left: 1px solid black; width:20px; height:40px; position: absolute; bottom:0;
     left: 50%;
 }
 

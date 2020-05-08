@@ -245,6 +245,35 @@
   }
 }
 
+@media screen and (max-width:767px) and (orientation:landscape) {
+  
+  .main_hi {
+    height: 160px; 
+    width: 500px; 
+    top: calc(50vh - 100px);
+    left: calc(50% - 230px);
+    line-height: 230px;
+  }
+
+  .main_bottom_bar_content{
+    padding-bottom: 48px;
+  }
+
+  .menu_text_wrap {
+    margin: 0;
+  }
+
+  .menu_container {
+    padding-top: 0;
+    height: auto;
+    margin-top: -60px;
+  }
+
+  .gnb_aside {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width:480px) {
   .footer_content_left_logo {
     font-size: 22px;
@@ -265,5 +294,5 @@
 
   .home_section_content_title_m {
     display: block;
-}
+  }
 }
