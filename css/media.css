@@ -62,12 +62,13 @@
   .gnb {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .menu_container {
     flex-direction: column;
     margin: 0 auto;
-    padding: 180px 50px 0;
+    padding: 90px 50px 0;
     height: 100%;
     justify-content: flex-start;
   }
@@ -105,7 +106,21 @@
 
   .gnb_aside {
     position: static;
-    margin-top: 90px;
+    padding-top: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .gnb_aside p {
+    font-size: 17px;
+  }
+
+  .gnb_aside a {
+    font-size: 18px;
+    margin-top: 2px;
   }
 
   .main_hello {
@@ -266,7 +281,7 @@
   .menu_container {
     padding-top: 0;
     height: auto;
-    margin-top: -90px;
+    padding-top: 70px;
   }
 
   .gnb_aside {
