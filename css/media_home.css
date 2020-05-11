@@ -1,0 +1,142 @@
+
+
+@media screen and (max-width:999px) {
+  h1 {
+    font-size: 72px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .main_hello {
+    width: 700px;
+    left: calc(50% - 330px);
+  }
+
+  .main_hi {
+    width: 320px;
+    left: calc(50% - 150px);
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  h5 {
+    font-size: 14px
+  }
+
+  .main_hello {
+    display: none;
+  }
+
+  .main_hi {
+    display: block;
+  }
+
+  .back_img_01 {
+    background-image: url(../img/hugeinc_1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .back_img_02 {
+    background-image: url(../img/huge_1.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .back_img_03 {
+    background-image: url(../img/hugeinc10_1.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .back_img_04 {
+    background-image: url(../img/hugeinc14.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .back_img_05 {
+    background-image: url(../img/hugeinc2_1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .back_img_06 {
+    background-image: url(../img/hugeinc8.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .back_img_07 {
+    background-image: url(../img/hugeinc5.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  .home_section_index {
+    display: none;
+  }
+
+  .home_section_content {
+    width: 87.34177%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .home_section_content_wrap {
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .media_subtitle_wrap {
+    display: block;
+    display: flex;
+  }
+
+  .media_subtitle_wrap p {
+    font-size: 14px;
+  }
+
+  .media_subtitle {
+    font-size: 14px;
+  }
+
+  .home_section_content_subwrap {
+    height: auto;
+  }
+
+  .home_section_content_subwrap h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  margin-top: 3vh;
+  }
+
+  .home_section_content_subwrap div {
+  width: 21.05263%;
+  margin: 0 auto 10px 0;
+  }
+  .home_section_content_subwrap p {
+  font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width:380px) {
+
+  .home_section_content_title {
+    display: none;
+  }
+
+  .home_section_content_title_m {
+    display: block;
+  }
+}
