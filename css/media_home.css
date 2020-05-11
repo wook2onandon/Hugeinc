@@ -19,6 +19,18 @@
     left: calc(50% - 150px);
   }
 
+  .home_section_index_wrap p {
+    font-size: 14px;
+  }
+
+  .media_subtitle {
+    font-size: 14px;
+  }
+
+  .home_section_content_wrap {
+    width: 40vw;
+  }
+
 }
 
 @media screen and (max-width:767px) {
@@ -89,6 +101,7 @@
     width: 87.34177%;
     margin: 0 auto;
     padding-left: 0;
+    padding: 15vh 0 5vh;
   }
 
   .home_section_content_wrap {
@@ -99,14 +112,6 @@
   .media_subtitle_wrap {
     display: block;
     display: flex;
-  }
-
-  .media_subtitle_wrap p {
-    font-size: 14px;
-  }
-
-  .media_subtitle {
-    font-size: 14px;
   }
 
   .home_section_content_subwrap {

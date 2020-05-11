@@ -93,7 +93,7 @@
 }
 
 .media_subtitle_wrap p {
-    font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100px; padding-right: 15px; letter-spacing: 1px; line-height: 22px;
+    font-family: HugeGothic-Bold; font-size: 14px; font-weight: 100px; padding-right: 15px; letter-spacing: 1px; line-height: 22px;
 }
 .media_subtitle_wrap div {
     width:6.77966vw; height: 11px;
@@ -109,8 +109,9 @@
 .home_section_content {
     width: 74.68354%; height: 100vh; padding: 20vh 0; padding-left: 15px; box-sizing: border-box;
 }
+
 .home_section_content_wrap {
-    width: 45%; height: 60vh;
+    width: 45%;
 }
 
 .home_section_content_subwrap {
