@@ -33,6 +33,21 @@
 
 }
 
+@media screen and (max-width:767px) and (orientation:landscape) {
+  
+  .main_hi {
+    height: 160px; 
+    width: 300px; 
+    top: calc(50vh - 100px);
+    left: calc(50% - 140px);
+    line-height: 230px;
+  }
+
+  .main_bottom_bar_content{
+    padding-bottom: 48px;
+  }
+}
+
 @media screen and (max-width:767px) {
   h2 {
     font-size: 40px;

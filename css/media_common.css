@@ -16,24 +16,36 @@
 
 @media screen and (max-width:999px){
 
+  .about_magenta > div:first-child {
+    padding: 160px 0;
+  }
+
+  .about_magenta_img {
+    width: 25.42373%;
+    margin-right: 1.66667%;
+    margin-left: 16.94915%;
+    padding-bottom: 25.42373%;
+    float: left;
+  }
+
+  .about_magenta_content {
+    width: 40.67797%;
+    margin-right: 1.69492%;
+    margin-left: 6.77966%;
+    float: left;
+  }
+
+  .about_magenta_title {
+    font-size: 72px;
+    line-height: 75px;
+  }
+
   .home_footer {
     padding: 120px 0 100px 0;
   }
 }
 
 @media screen and (max-width:767px) and (orientation:landscape) {
-  
-  .main_hi {
-    height: 160px; 
-    width: 500px; 
-    top: calc(50vh - 100px);
-    left: calc(50% - 230px);
-    line-height: 230px;
-  }
-
-  .main_bottom_bar_content{
-    padding-bottom: 48px;
-  }
 
   .menu_text_wrap {
     margin: 0;
@@ -53,6 +65,8 @@
 
 @media screen and (max-width:767px){
 
+
+/* 로고 */
   #logo {
     width: 60px;
     height: 60px;
@@ -65,6 +79,8 @@
     top:25px
   }
 
+
+/* 네비바 */
   .gnb {
     display: flex;
     flex-direction: column;
@@ -129,6 +145,46 @@
     margin-top: 2px;
   }
 
+
+/* 마젠타 */
+
+.about_magenta > div:first-child {
+  padding: 80px 0;
+}
+
+.about_magenta_container {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.about_magenta_img {
+  width: 35.89744%;
+  margin-right: 2.5641%;
+  margin-left: 12.82051%;
+  padding-bottom: 35.89744%;
+  float: left;
+  display: inline-table;
+}
+
+.about_magenta_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  width: 74.35897%;
+  margin-right: 2.5641%;
+  margin-left: 12.82051%;
+}
+
+  .about_magenta_title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+
+
+
+/* 푸터 */
   .home_footer {
     width: 100%;
     height: auto;
