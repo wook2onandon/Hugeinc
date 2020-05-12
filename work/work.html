@@ -21,9 +21,10 @@
     <!-- 브라우저 css 링크 -->
     <link rel="stylesheet" type="text/css" href="../css/destyle.css"> <!-- 초기화 css -->
     <link rel="stylesheet" type="text/css" href="../css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="../css/about.css"> 
     <link rel="stylesheet" type="text/css" href="../css/work.css"> 
     <!-- 홈 화면 css -->
+    <link rel="stylesheet" type="text/css" href="../css/media_common.css">
+    <link rel="stylesheet" type="text/css" href="../css/media_work.css"> 
 
 
     <script>
@@ -34,20 +35,61 @@
         
         
             function logoClick() {
+
+        if (document.body.clientWidth > 767)
+
+                {
                 if (header_state == 0 ) {
-                    document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.5s; animation-fill-mode:forwards;"; 
-                    header_state = 1; /* 헤더 visible 상태로 기억 */
+                    document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.3s; animation-fill-mode:forwards;"; 
 
                     document.getElementById('main').style = "padding-top: 440px;";
+
+                    document.getElementById("logo").style.display = "none";
+
+                    document.getElementById("logo_open").style.display = "flex";
+
+                    header_state = 1; /* 헤더 visible 상태로 기억 */
+
                 } 
 
                 else {
-                    document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.5s;"; 
+                    document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.3s;"; 
+
+                    document.getElementById("logo").style.display = "flex";
+
+                    document.getElementById("logo_open").style.display = "none";
+
+                    document.getElementById('main').style = "padding-top: 0px;";
+                    header_state = 0; /* 헤더 hidden 상태로 기억 */
+                }
+
+                }
+
+
+            else { if (header_state == 0 ) {
+                    document.getElementById("home_header").style ="animation-name: header_animation_open_m; animation-duration: 0.3s; animation-fill-mode:forwards;"; 
+                    document.getElementById("logo").style.display = "none";
+
+                    document.getElementById("logo_open").style.display = "flex";
+
+                    document.getElementById('main').style = "padding-top: 440px;";
+
+                    header_state = 1; /* 헤더 visible 상태로 기억 */
+
+                } 
+
+                else {
+                    document.getElementById("home_header").style ="animation-name: header_animation_close_m; animation-duration: 0.3s;"; 
+
+                    document.getElementById("logo").style.display = "flex";
+
+                    document.getElementById("logo_open").style.display = "none";
 
                     document.getElementById('main').style = "padding-top: 0px;";
                     header_state = 0; /* 헤더 hidden 상태로 기억 */
                 }
             }
+        }
     
             
         </script>
@@ -61,37 +103,56 @@
 
  <!-- home 로고 -->
     <div id="logo" onclick="logoClick()">H</div>
+    <div id="logo_open" onclick="logoClick()">HUGE</div>
 
-
- <!-- 메뉴바 시작 -->
-<header id="home_header">
+  <!-- 메뉴바 시작 -->
+  <header id="home_header">
     <nav class="gnb"> 
-        <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
-            <li>
-                <a href="index.html">Hello.</a>
-                <p class="color_black">Today at Huge.</p>
-                <div></div>
+        <ul class="menu_container"> <!-- 메뉴 ul 시작 -->
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="../index.html">Hello.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Today at Huge.</p>
+                </div>
+                <div class="menu_hr"></div>
             </li>
-            <li>
-                <a href="work.html">Work.</a>
-                <p class="color_black">What we've made.</p>
-                <div></div>
-            </li>  
-            <li>
-                <a href="about.html">About.</a>
-                <p class="color_black">Who we are.</p>
-                <div></div>
-            </li>  
-            <li>
-                <a href="careers.html">Careers.</a>
-                <p class="color_black">Join the team.</p>
-                <div></div>
-            </li>  
-            <li>
-                <a href="contact.html">Contact.</a>
-                <p class="color_black">Get in touch.</p>
-                <div></div>
-            </li>  
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="../work/work.html">Work.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">What we've made.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="../about/about.html">About.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Who we are.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="../careers/careers.html">Careers.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Join the team.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
+
+            <li class="menu_wrap">
+                <div class="menu_text_wrap">
+                    <a class="menu_title" href="../contact/contact.html">Contact.</a>
+                    <hr class="menu_hr_m">
+                    <p class="menu_subtitle color_black">Get in touch.</p>
+                </div>
+                <div class="menu_hr"></div>
+            </li>
             
         </ul> <!-- 메뉴 ul 끝 -->
     
@@ -106,9 +167,9 @@
 
 
 <main id="main">
-    <section style="position: relative; width: 100vw; height: 80vh;">
+    <section style="position: relative; width: 100%; height: 80vh;">
     
-        <video autoplay muted loop style="min-width: 100vw; min-height: 80vh; border: none; right: 0; bottom: 0; position: absolute; vertical-align: bottom;">
+        <video autoplay muted loop style="min-width: 100%; min-height: 80vh; border: none; right: 0; bottom: 0; position: absolute; vertical-align: bottom;">
             <source src="../video/huge_work.mp4" type="video/mp4">
             당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
         </video>
@@ -117,7 +178,7 @@
     
     
     
-    <div class="work_02">Make something you love.</div>
+    <div class="work_02"><div>Make something you love.</div></div>
     
     <div class="work_03">
     
@@ -125,109 +186,92 @@
     
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Scott sports.</h4>
-                    <h5>>></h5>
+                    <h4>Scott sports.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Android.</h4>
-                    <h5>>></h5>
+                    <h4>Android.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>AMC theatres.</h4>
-                    <h5>>></h5>
+                    <h4>AMC theatres.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
     
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Canada Goose.</h4>
-                    <h5>>></h5>
+                    <h4>Canada Goose.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Google.</h4>
-                    <h5>>></h5>
+                    <h4>Google.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Gucci.</h4>
-                    <h5>>></h5>
+                    <h4>Gucci.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
     
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Hulu.</h4>
-                    <h5>>></h5>
+                    <h4>Hulu.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Kohl's.</h4>
-                    <h5>>></h5>
+                    <h4>Kohl's.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>LG.</h4>
-                    <h5>>></h5>
+                    <h4>LG.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
     
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Lenovo.</h4>
-                    <h5>>></h5>
+                    <h4>Lenovo.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>NBC Universal.</h4>
-                    <h5>>></h5>
+                    <h4>NBC Universal.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Nike.</h4>
-                    <h5>>></h5>
+                    <h4>Nike.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Pfizer.</h4>
-                    <h5>>></h5>
+                    <h4>Pfizer.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Procter&Gamble.</h4>
-                    <h5>>></h5>
+                    <h4>Procter & Gamble.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Randstad.</h4>
-                    <h5>>></h5>
+                    <h4>Randstad.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
     
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Telus.</h4>
-                    <h5>>></h5>
+                    <h4>Telus.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
             <li class="work_03_li color_white">
                 <a>
-                    <h4>Zelle.</h4>
-                    <h5>>></h5>
+                    <h4>Zelle.<br><br><span class="work_03_li_hidden">>></span></h4>
                 </a>
             </li>
     
@@ -247,37 +291,37 @@
     
             <ul class="work_04_right">
     
-                <li><img src="img/huge-logosAMEX.png" alt="American Express Logo"></li>
+                <li><img src="../img/huge-logosAMEX.png" alt="American Express Logo"></li>
     
-                <li><img src="img/CHRYSLER.png" alt="FCA Logo"></li>
+                <li><img src="../img/CHRYSLER.png" alt="FCA Logo"></li>
                 
-                <li><img src="img/Huge_work_clientsArtboard-12.png" alt="Enel logo"></li>
+                <li><img src="../img/Huge_work_clientsArtboard-12.png" alt="Enel logo"></li>
     
-                <li><img src="img/ESTEE1.png" alt="Estee Lauder logo"></li>
+                <li><img src="../img/ESTEE1.png" alt="Estee Lauder logo"></li>
     
-                <li><img src="img/Four_Seasons.png" alt="Four Seasons Logo"></li>
+                <li><img src="../img/Four_Seasons.png" alt="Four Seasons Logo"></li>
     
-                <li><img src="img/Eli_Lilly.png" alt="Eli Lily logo"></li>
+                <li><img src="../img/Eli_Lilly.png" alt="Eli Lily logo"></li>
                 
-                <li><img src="img/Huge_work_clientsArtboard-24.png" alt="Lowes"></li>
+                <li><img src="../img/Huge_work_clientsArtboard-24.png" alt="Lowes"></li>
     
-                <li><img src="img/LVMH.png" alt="LVMH logo"></li>
+                <li><img src="../img/LVMH.png" alt="LVMH logo"></li>
     
-                <li><img src="img/Mcdonalds.png" alt="McDonalds logo"></li>
+                <li><img src="../img/Mcdonalds.png" alt="McDonalds logo"></li>
     
-                <li><img src="img/Nestle.png" alt="Nestle Logo"></li>
+                <li><img src="../img/Nestle.png" alt="Nestle Logo"></li>
                 
-                <li><img src="img/TD_Bank.png" alt="TD Bank logo"></li>
+                <li><img src="../img/TD_Bank.png" alt="TD Bank logo"></li>
     
-                <li><img src="img/Reuters.png" alt="Thomson Reuters Logo"></li>
+                <li><img src="../img/Reuters.png" alt="Thomson Reuters Logo"></li>
     
-                <li><img src="img/Time_Warner.png" alt="Time Warner logo"></li>
+                <li><img src="../img/Time_Warner.png" alt="Time Warner logo"></li>
     
-                <li><img src="img/Huge_work_clientsArtboard-9.png" alt="United logo"></li>
+                <li><img src="../img/Huge_work_clientsArtboard-9.png" alt="United logo"></li>
                 
-                <li><img src="img/huge-logosUPS.png" alt="UPS Logo"></li>
+                <li><img src="../img/huge-logosUPS.png" alt="UPS Logo"></li>
     
-                <li><img src="img/Huge_work_clientsArtboard-1.png" alt="UTC Logo"></li>
+                <li><img src="../img/Huge_work_clientsArtboard-1.png" alt="UTC Logo"></li>
           
             </ul>
     
@@ -307,20 +351,20 @@
     
     <footer class="home_footer bg_color_black">
     
-        <div>
+        <div class="home_footer_wrap">
     
             <div class="footer_content_left color_white">
-                <div>HUGE</div>
-                <p>Make somerthing you love.</p>
+                <div class="footer_content_left_logo">HUGE</div>
+                <p class="footer_content_left_text">Make somerthing you live.</p>
             </div>
     
             <div class="footer_content_right">
                 <div>
-                    <a href="hello.html">Hello</a>
-                    <a href="work.html">Work</a>
-                    <a href="about.html">About</a>
-                    <a href="careers.html">Careers</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="../index.html">Hello</a>
+                    <a href="../work.html">Work</a>
+                    <a href="../about.html">About</a>
+                    <a href="../careers.html">Careers</a>
+                    <a href="../contact.html">Contact</a>
                 </div>
     
                 <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
