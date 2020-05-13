@@ -19,10 +19,11 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap">
 
     <!-- 브라우저 css 링크 -->
-    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 css -->
-    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 css -->
-    <link rel="stylesheet" type="text/css" href="css/about.css">
-    <link rel="stylesheet" type="text/css" href="css/careers.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/destyle.css"> <!-- 초기화 css -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css"> <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="../css/careers.css">
+    <link rel="stylesheet" type="text/css" href="../css/media_common.css">
+    <link rel="stylesheet" type="text/css" href="../css/media_careers.css">
     <!-- 홈 화면 css -->
 
 
@@ -34,20 +35,61 @@
       
       
           function logoClick() {
+
+      if (document.body.clientWidth > 767)
+
+              {
               if (header_state == 0 ) {
-                  document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.5s; animation-fill-mode:forwards;"; 
-                  header_state = 1; /* 헤더 visible 상태로 기억 */
+                  document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.3s; animation-fill-mode:forwards;"; 
 
                   document.getElementById('main').style = "padding-top: 440px;";
+
+                  document.getElementById("logo").style.display = "none";
+
+                  document.getElementById("logo_open").style.display = "flex";
+
+                  header_state = 1; /* 헤더 visible 상태로 기억 */
+
               } 
 
               else {
-                  document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.5s;"; 
+                  document.getElementById("home_header").style ="animation-name: header_animation_close; animation-duration: 0.3s;"; 
+
+                  document.getElementById("logo").style.display = "flex";
+
+                  document.getElementById("logo_open").style.display = "none";
+
+                  document.getElementById('main').style = "padding-top: 0px;";
+                  header_state = 0; /* 헤더 hidden 상태로 기억 */
+              }
+
+              }
+
+
+          else { if (header_state == 0 ) {
+                  document.getElementById("home_header").style ="animation-name: header_animation_open_m; animation-duration: 0.3s; animation-fill-mode:forwards;"; 
+                  document.getElementById("logo").style.display = "none";
+
+                  document.getElementById("logo_open").style.display = "flex";
+
+                  document.getElementById('main').style = "padding-top: 440px;";
+
+                  header_state = 1; /* 헤더 visible 상태로 기억 */
+
+              } 
+
+              else {
+                  document.getElementById("home_header").style ="animation-name: header_animation_close_m; animation-duration: 0.3s;"; 
+
+                  document.getElementById("logo").style.display = "flex";
+
+                  document.getElementById("logo_open").style.display = "none";
 
                   document.getElementById('main').style = "padding-top: 0px;";
                   header_state = 0; /* 헤더 hidden 상태로 기억 */
               }
           }
+      }
   
           
       </script>
@@ -61,37 +103,57 @@
 
 <!-- home 로고 -->
   <div id="logo" onclick="logoClick()">H</div>
+  <div id="logo_open" onclick="logoClick()">HUGE</div>
 
 
 <!-- 메뉴바 시작 -->
 <header id="home_header">
   <nav class="gnb"> 
-      <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
-          <li>
-              <a href="index.html">Hello.</a>
-              <p class="color_black">Today at Huge.</p>
-              <div></div>
+      <ul class="menu_container"> <!-- 메뉴 ul 시작 -->
+          <li class="menu_wrap">
+              <div class="menu_text_wrap">
+                  <a class="menu_title" href="../index.html">Hello.</a>
+                  <hr class="menu_hr_m">
+                  <p class="menu_subtitle color_black">Today at Huge.</p>
+              </div>
+              <div class="menu_hr"></div>
           </li>
-          <li>
-              <a href="work.html">Work.</a>
-              <p class="color_black">What we've made.</p>
-              <div></div>
-          </li>  
-          <li>
-              <a href="about.html">About.</a>
-              <p class="color_black">Who we are.</p>
-              <div></div>
-          </li>  
-          <li>
-              <a href="careers.html">Careers.</a>
-              <p class="color_black">Join the team.</p>
-              <div></div>
-          </li>  
-          <li>
-              <a href="contact.html">Contact.</a>
-              <p class="color_black">Get in touch.</p>
-              <div></div>
-          </li>  
+
+          <li class="menu_wrap">
+              <div class="menu_text_wrap">
+                  <a class="menu_title" href="../work/work.html">Work.</a>
+                  <hr class="menu_hr_m">
+                  <p class="menu_subtitle color_black">What we've made.</p>
+              </div>
+              <div class="menu_hr"></div>
+          </li>
+
+          <li class="menu_wrap">
+              <div class="menu_text_wrap">
+                  <a class="menu_title" href="../about/about.html">About.</a>
+                  <hr class="menu_hr_m">
+                  <p class="menu_subtitle color_black">Who we are.</p>
+              </div>
+              <div class="menu_hr"></div>
+          </li>
+
+          <li class="menu_wrap">
+              <div class="menu_text_wrap">
+                  <a class="menu_title" href="careers/careers.html">Careers.</a>
+                  <hr class="menu_hr_m">
+                  <p class="menu_subtitle color_black">Join the team.</p>
+              </div>
+              <div class="menu_hr"></div>
+          </li>
+
+          <li class="menu_wrap">
+              <div class="menu_text_wrap">
+                  <a class="menu_title" href="../contact/contact.html">Contact.</a>
+                  <hr class="menu_hr_m">
+                  <p class="menu_subtitle color_black">Get in touch.</p>
+              </div>
+              <div class="menu_hr"></div>
+          </li>
           
       </ul> <!-- 메뉴 ul 끝 -->
   
@@ -108,9 +170,9 @@
 
   <section class="hero_video">
 
-    <video autoplay muted loop poster="img/careers/hugeInc_recruting.png">
+    <video autoplay muted loop poster="../img/careers/hugeInc_recruting.png">
       
-        <source src="video/huge_careers.mp4" type="video/mp4">
+        <source src="../video/huge_careers.mp4" type="video/mp4">
         당신의 브라우저는 이 비디오 형식을 지원하지 않습니다!
     </video>
 
@@ -175,7 +237,7 @@
             <h2 class="color_white">Be honest.</h2>
             <p class="color_white">Don’t be afraid to say what you think. Strong teams are built on different perspectives.</p>
           </div>
-          <p class="color_white">I</p>
+          <span class="color_white">I</span>
         </li>
 
         <li>
@@ -183,7 +245,7 @@
             <h2 class="color_white">Embrace the unknown.</h2>
             <p class="color_white">The future is uncertain, but you can be ready for it.</p>
           </div>
-          <p class="color_white">II</p>
+          <span class="color_white">II</span>
         </li>
 
         <li>
@@ -191,7 +253,7 @@
             <h2 class="color_white">Take chances.</h2>
             <p class="color_white">You can’t be right until you know what’s wrong.</p>
           </div>
-          <p class="color_white">III</p>
+          <span class="color_white">III</span>
         </li>
 
         <li>
@@ -199,7 +261,7 @@
             <h2 class="color_white">Ideas over egos.</h2>
             <p class="color_white">Listen to others and save your energy for what matters.</p>
           </div>
-          <p class="color_white">IV</p>
+          <span class="color_white">IV</span>
         </li>
 
         <li>
@@ -207,7 +269,7 @@
             <h2 class="color_white">Give a shit.</h2>
             <p class="color_white">If you don’t care, why should anyone else?</p>
           </div>
-          <p class="color_white">V</p>
+          <span class="color_white">V</span>
         </li>
         
       </ul>
@@ -245,32 +307,30 @@
 <!-- footer시작 -->
 
 <footer class="home_footer bg_color_black">
-
-    <div>
-
-        <div class="footer_content_left color_white">
-            <div>HUGE</div>
-            <p>Make somerthing you love.</p>
-        </div>
-
-        <div class="footer_content_right">
-            <div>
-                <a href="hello.html">Hello</a>
-                <a href="work.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="careers.html">Careers</a>
-                <a href="contact.html">Contact</a>
-            </div>
-
-            <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
-                CCPA Privacy Notice<br>
-                Modern Slavery Act Statement</div>
-        </div>
-
-    </div>
-
-
     
+  <div class="home_footer_wrap">
+
+      <div class="footer_content_left color_white">
+          <div class="footer_content_left_logo">HUGE</div>
+          <p class="footer_content_left_text">Make somerthing you live.</p>
+      </div>
+
+      <div class="footer_content_right">
+          <div>
+              <a href="hello.html">Hello</a>
+              <a href="work.html">Work</a>
+              <a href="about.html">About</a>
+              <a href="careers.html">Careers</a>
+              <a href="contact.html">Contact</a>
+          </div>
+
+          <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+              CCPA Privacy Notice<br>
+              Modern Slavery Act Statement</div>
+      </div>
+
+  </div>
+
 
 
 </footer>
