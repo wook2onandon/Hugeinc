@@ -92,6 +92,7 @@
   border-right: solid 1px #000;
   border-top: solid 1px #000;
   background-color: white;
+  position: relative;
 }
 
 .contact_us_title {
@@ -104,6 +105,14 @@
 
 .contact_us_text {
   min-height: 100px;
+}
+
+.contact_us_img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
 }
 
 .contact_us_content:nth-child(3n) {
