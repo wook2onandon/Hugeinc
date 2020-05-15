@@ -17,7 +17,7 @@
 
 .contact_hello {
   background-color: black;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -74,7 +74,7 @@
 /*  contact_us  */
 
 .contact_us {
-  width: 100vw;
+  width: 100%;
   background-color: black;
 }
 
