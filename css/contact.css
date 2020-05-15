@@ -30,6 +30,17 @@
   padding-bottom: 200px;
 }
 
+.section_subtitle_nopadding {
+  width: 32.20339%;
+  margin-bottom: 50px;
+}
+
+.section_subtitle_rule_white {
+  width: 47.36842%;
+  border-top: 1px solid white;
+  margin-bottom: 20px;
+}
+
 .contact_hello_content_wrap {
   width: 66.10169%;
   margin-left: 1.69492%;
