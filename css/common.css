@@ -344,6 +344,43 @@ nav {
 
 /* footer */
 
+.about_magenta {
+  width: 100%;
+  background-image: url(../img/screen_shot.png);
+  background-size: cover;
+}
+
+.about_magenta > div:first-child {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 200px 0;
+}
+
+.about_magenta_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about_magenta_img {
+  width: 18.98734%;
+  padding-bottom: 18.98734%;
+  background-image: url(../img/magenta-hero.gif);
+  background-size: cover;
+  margin-right: 1.25%;
+  margin-left: 12.65823%;
+}
+
+.about_magenta_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  width: 43.03797%;
+  margin-right: 1.26582%;
+  margin-left: 5.06329%;
+}
+
 .home_footer {
   width: 100%;
   height: auto;
