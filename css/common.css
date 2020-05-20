@@ -112,56 +112,57 @@ p {
   line-height: 20px;
 }
 
-
-
 /*  keyframes  */
 
-
 @keyframes logo_animation {
-  0%{background-position:0% 4%}
-  50%{background-position:100% 97%}
-  100%{background-position:0% 4%}
-
+  0% {
+    background-position: 0% 4%;
+  }
+  50% {
+    background-position: 100% 97%;
+  }
+  100% {
+    background-position: 0% 4%;
+  }
 }
 
 @keyframes header_animation_open {
-  from { 
+  from {
     height: 0px;
   }
 
-  to { 
+  to {
     height: 440px;
   }
 }
 
 @keyframes header_animation_close {
-  from { 
+  from {
     height: 440px;
   }
-  to { 
+  to {
     height: 0px;
   }
 }
 
 @keyframes header_animation_open_m {
-  from { 
+  from {
     height: 0px;
   }
 
-  to { 
+  to {
     height: 80vh;
   }
 }
 
 @keyframes header_animation_close_m {
-  from { 
+  from {
     height: 80vh;
   }
-  to { 
+  to {
     height: 0px;
   }
 }
-
 
 /* background-color */
 
@@ -220,7 +221,15 @@ nav {
   z-index: 200;
   padding-top: 4px;
   box-sizing: border-box;
-  background: linear-gradient(315deg,  #ea178c, #ffffff, #ffffff, #ea178c,  #ffffff, #ffffff);
+  background: linear-gradient(
+    315deg,
+    #ea178c,
+    #ffffff,
+    #ffffff,
+    #ea178c,
+    #ffffff,
+    #ffffff
+  );
   background-size: 800% 800%;
   animation: logo_animation 0.7s;
   animation-iteration-count: 1;
@@ -245,9 +254,22 @@ nav {
   animation: logo_animation 0.7s;
   animation-iteration-count: 1;
   display: none;
-
 }
 
+#logo:hover {
+  background: #ea178c;
+  color: white;
+}
+
+#border_s {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: border-width 0.25s;
+}
 
 .menu_container {
   width: 100%;
