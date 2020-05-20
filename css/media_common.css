@@ -57,6 +57,10 @@
     top: 25px;
   }
 
+  #border_s {
+    display: none;
+  }
+
   /* 네비바 */
   .gnb {
     display: flex;
