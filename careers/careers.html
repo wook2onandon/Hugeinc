@@ -31,15 +31,33 @@
 
       /* 변수 선언 */
 
-      var header_state = 0; /* 헤더 상태 */
+      var header_state = 0; /* 헤더 보이는 상태 */
+      var border_state = 0; /* 보더 보이는 상태 */
+
+          /* 보더 보이게 */
+          function borderShow() {
+              if ( border_state == 0) {
+                  document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4; border-left:50px solid #f4f4f4;"
+                  border_state = 1;
+              } 
+          }
+
+          /* 보더 안보이게 */
+          function borderHide() {
+              if ( border_state == 1 && header_state == 0) {
+                  document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4; border-left:0px solid #f4f4f4;"
+                  border_state = 0;
+              } 
+          }
       
-      
+
           function logoClick() {
 
-      if (document.body.clientWidth > 767)
+          if (document.body.clientWidth > 767) {
+              if (header_state == 0) {
 
-              {
-              if (header_state == 0 ) {
+
+                  //logo_state
                   document.getElementById("home_header").style ="animation-name: header_animation_open; animation-duration: 0.3s; animation-fill-mode:forwards;"; 
 
                   document.getElementById('main').style = "padding-top: 440px;";
@@ -49,6 +67,8 @@
                   document.getElementById("logo_open").style.display = "flex";
 
                   header_state = 1; /* 헤더 visible 상태로 기억 */
+
+                  document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:0px solid #f4f4f4; border-left:50px solid #f4f4f4;"
 
               } 
 
@@ -61,9 +81,10 @@
 
                   document.getElementById('main').style = "padding-top: 0px;";
                   header_state = 0; /* 헤더 hidden 상태로 기억 */
+                  document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4; border-left:50px solid #f4f4f4;"
               }
 
-              }
+          }
 
 
           else { if (header_state == 0 ) {
@@ -88,10 +109,10 @@
                   document.getElementById('main').style = "padding-top: 0px;";
                   header_state = 0; /* 헤더 hidden 상태로 기억 */
               }
+
           }
       }
-  
-          
+
       </script>
 
       
@@ -101,10 +122,11 @@
 
 <body>
 
-<!-- home 로고 -->
-  <div id="logo" onclick="logoClick()">H</div>
+  <!-- home 로고 -->
+  <div id="logo" onclick="logoClick()" onmouseover="borderShow()" onmouseout="borderHide()">H</div>
   <div id="logo_open" onclick="logoClick()">HUGE</div>
 
+  <a id="border_s"></a>
 
 <!-- 메뉴바 시작 -->
 <header id="home_header">
