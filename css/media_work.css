@@ -1,5 +1,4 @@
-@media screen and (max-width:999px) {
-
+@media screen and (max-width: 999px) {
   .work_02 div {
     font-size: 42px;
   }
@@ -56,11 +55,9 @@
     margin: 0 0 50px;
     width: 33.33333%;
   }
-
 }
 
-@media screen and (max-width:767px) {
-
+@media screen and (max-width: 767px) {
   .work_02 div {
     font-size: 30px;
     width: 300px;
@@ -99,5 +96,32 @@
   .work_04_left h4 {
     font-size: 14px;
   }
+}
 
+@media screen and (max-width: 386px) {
+  .work_03_li:nth-child(4) a {
+    width: 86.9vw;
+    height: 86.9vw;
+    display: block;
+    padding-top: calc(86.9vw - 100px);
+    transition: none;
+  }
+
+  .work_03_li:nth-last-child(4) a {
+    width: 86.9vw;
+    height: 86.9vw;
+    display: block;
+    padding-top: calc(86.9vw - 100px);
+    transition: none;
+  }
+
+  .work_03_li:nth-child(4) a:hover {
+    background-color: inherit;
+    padding-top: calc(86.9vw - 100px);
+  }
+
+  .work_03_li:nth-last-child(4) a:hover {
+    background-color: inherit;
+    padding-top: calc(86.9vw - 100px);
+  }
 }
