@@ -113,6 +113,23 @@
           }
       }
 
+      var prevYscroll = window.pageYOffset;
+            window.onscroll = function () {
+        var presentYscroll = window.pageYOffset;
+        if (presentYscroll > prevYscroll) {
+            document.getElementById("logo").style = "top:-124px; opacity:0.5;";
+        } 
+        else {
+            if (document.body.clientWidth > 767) {
+                document.getElementById("logo").style = "top:50px; opacity:1;";
+            }
+            else {
+                document.getElementById("logo").style = "top:25px; opacity:1;";
+            }
+        }
+        prevYscroll = presentYscroll;
+        };
+
       </script>
 
       
