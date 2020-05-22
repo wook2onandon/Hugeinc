@@ -109,7 +109,7 @@
 
   .gnb_aside {
     position: static;
-    padding-top: 50px;
+    padding-top: 15px;
     width: 100%;
     height: auto;
     display: flex;
@@ -213,6 +213,7 @@
 
   .gnb_aside {
     margin-top: 0;
+    padding: 0;
   }
 }
 
